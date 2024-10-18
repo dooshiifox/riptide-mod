@@ -1,0 +1,15 @@
+{
+  "required": true,
+  "package": "dev.dooshii.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "ArmorItemTypeMixin",
+    "EnchantmentHelperMixin",
+    "ItemsMixin",
+    "ToolMaterialsMixin",
+    "TridentItemMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+	}
+}
