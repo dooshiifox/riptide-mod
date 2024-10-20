@@ -3,7 +3,7 @@
 	"package": "dev.dooshii.mixin.client",
 	"compatibilityLevel": "JAVA_21",
 	"client": [
-		"ExampleClientMixin"
+      "AbstractInventoryScreenMixin"
 	],
 	"injectors": {
 		"defaultRequire": 1
