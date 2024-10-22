@@ -1,7 +1,7 @@
 package dev.dooshii.mixin.client;
 
 import com.llamalad7.mixinextras.sugar.Local;
-import dev.dooshii.DampEffect;
+import dev.dooshii.entity.effect.DampStatusEffect;
 import dev.dooshii.Riptide;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.gui.DrawContext;
@@ -37,7 +37,7 @@ public class AbstractInventoryScreenMixin {
 			return;
 		}
 
-		int color = DampEffect.getModifier(player).getTextColor();
+		int color = DampStatusEffect.getModifier(player).getTextColor();
 		context.drawTextWithShadow(client.textRenderer, durationText, x + 10 + 18, i + 6 + 10, color);
 	}
 }

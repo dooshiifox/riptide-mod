@@ -1,6 +1,6 @@
 package dev.dooshii.mixin;
 
-import dev.dooshii.DampEffect;
+import dev.dooshii.entity.effect.DampStatusEffect;
 import dev.dooshii.Riptide;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.effect.StatusEffectInstance;
@@ -19,16 +19,16 @@ public class StatusEffectInstanceMixin {
             return;
         }
 
-        DampEffect.Modifier modifier = DampEffect.getModifier(entity);
+        DampStatusEffect.Modifier modifier = DampStatusEffect.getModifier(entity);
 
-        if (modifier == DampEffect.Modifier.Nether) {
+        if (modifier == DampStatusEffect.Modifier.Nether) {
             // If in the nether, make the effect timer go twice as fast
             thisObject.duration = thisObject.mapDuration(duration -> duration - 1);
-        } else if (modifier == DampEffect.Modifier.Cold) {
+        } else if (modifier == DampStatusEffect.Modifier.Cold) {
             // If in a [cold biome](https://minecraft.wiki/w/Biome#List_of_biome_climates),
             // make the entity start freezing to death
             entity.setInPowderSnow(true);
-        } else if (modifier == DampEffect.Modifier.Water) {
+        } else if (modifier == DampStatusEffect.Modifier.Water) {
             // Make the effect timer deplete at half speed when in water or rain
             thisObject.duration = thisObject.mapDuration(duration -> entity.age % 2 == 0 ? duration : duration + 1);
         }

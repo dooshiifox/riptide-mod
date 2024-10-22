@@ -1,5 +1,6 @@
 package dev.dooshii;
 
+import dev.dooshii.entity.effect.DampStatusEffect;
 import net.fabricmc.api.ModInitializer;
 
 import net.minecraft.entity.effect.StatusEffect;
@@ -20,7 +21,7 @@ public class Riptide implements ModInitializer {
 	public static final StatusEffect DAMP_EFFECT;
 
 	static {
-		DAMP_EFFECT = Registry.register(Registries.STATUS_EFFECT, Identifier.of(Riptide.MOD_ID, "damp"), new DampEffect());
+		DAMP_EFFECT = Registry.register(Registries.STATUS_EFFECT, Identifier.of(Riptide.MOD_ID, "damp"), new DampStatusEffect());
 	}
 
 	@Override

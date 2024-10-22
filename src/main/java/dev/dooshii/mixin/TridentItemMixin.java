@@ -1,6 +1,6 @@
 package dev.dooshii.mixin;
 
-import dev.dooshii.DampEffect;
+import dev.dooshii.entity.effect.DampStatusEffect;
 import net.minecraft.enchantment.EnchantmentHelper;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemStack;
@@ -20,7 +20,7 @@ public class TridentItemMixin {
 	@Inject(method = "use", at = @At("HEAD"), cancellable = true)
 	public void use(World world, PlayerEntity user, Hand hand, CallbackInfoReturnable<TypedActionResult<ItemStack>> cir) {
 		ItemStack itemStack = user.getStackInHand(hand);
-		if (EnchantmentHelper.getTridentSpinAttackStrength(itemStack, user) > 0.0F && DampEffect.canUseRiptide(user)) {
+		if (EnchantmentHelper.getTridentSpinAttackStrength(itemStack, user) > 0.0F && DampStatusEffect.canUseRiptide(user)) {
 			user.setCurrentHand(hand);
 			cir.setReturnValue(TypedActionResult.consume(itemStack));
 		}
@@ -29,6 +29,6 @@ public class TridentItemMixin {
 	// Whether the player can use the riptide enchantment when they release the `use` button.
 	@Redirect(method = "onStoppedUsing", at = @At(value = "INVOKE", target = "Lnet/minecraft/entity/player/PlayerEntity;isTouchingWaterOrRain()Z"))
 	public boolean canUse(PlayerEntity player) {
-		return DampEffect.canUseRiptide(player);
+		return DampStatusEffect.canUseRiptide(player);
 	}
 }

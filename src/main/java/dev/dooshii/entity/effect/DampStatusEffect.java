@@ -1,5 +1,6 @@
-package dev.dooshii;
+package dev.dooshii.entity.effect;
 
+import dev.dooshii.Riptide;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.effect.StatusEffect;
 import net.minecraft.entity.effect.StatusEffectCategory;
@@ -10,8 +11,8 @@ import net.minecraft.registry.tag.BiomeTags;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.biome.Biome;
 
-public class DampEffect extends StatusEffect {
-    protected DampEffect() {
+public class DampStatusEffect extends StatusEffect {
+    public DampStatusEffect() {
         super(StatusEffectCategory.BENEFICIAL, 0x4d8db7);
     }
 
