@@ -4,9 +4,7 @@ import com.mojang.authlib.GameProfile;
 import com.mojang.serialization.Codec;
 import com.mojang.serialization.DataResult;
 import com.mojang.serialization.codecs.RecordCodecBuilder;
-import dev.dooshii.ModComponents;
 import io.netty.buffer.ByteBuf;
-import net.minecraft.component.type.LodestoneTrackerComponent;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.network.codec.PacketCodec;
@@ -45,13 +43,8 @@ public record TrackingCompassComponent(Optional<GlobalPos> target, Optional<Game
         );
     }
 
-    public TrackingCompassComponent(Optional<GlobalPos> target, Optional<GameProfile> player) {
-        this.target = target;
-        this.player = player;
-    }
-
-    public Optional<GlobalPos> target() { return this.target; };
-    public Optional<GameProfile> player() { return this.player; };
+    public Optional<GlobalPos> target() { return this.target; }
+    public Optional<GameProfile> player() { return this.player; }
 
     static public GlobalPos getEntityGPos(Entity entity) {
         return GlobalPos.create(entity.getWorld().getRegistryKey(), entity.getBlockPos());

@@ -65,7 +65,7 @@ public class ModItems {
     }
 
     public static Item register(Block block, UnaryOperator<Item.Settings> settingsOperator) {
-        return register(new BlockItem(block, (Item.Settings)settingsOperator.apply(new Item.Settings())));
+        return register(new BlockItem(block, settingsOperator.apply(new Item.Settings())));
     }
 
     public static Item register(Block block, Block... blocks) {

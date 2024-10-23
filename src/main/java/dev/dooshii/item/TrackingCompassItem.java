@@ -2,7 +2,6 @@ package dev.dooshii.item;
 
 import com.mojang.authlib.GameProfile;
 import dev.dooshii.ModComponents;
-import dev.dooshii.Riptide;
 import dev.dooshii.component.type.TrackingCompassComponent;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.LivingEntity;

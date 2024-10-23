@@ -4,11 +4,7 @@ import dev.dooshii.component.type.TrackingCompassComponent;
 import net.fabricmc.api.ClientModInitializer;
 import net.minecraft.client.item.CompassAnglePredicateProvider;
 import net.minecraft.client.item.ModelPredicateProviderRegistry;
-import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.util.Identifier;
-import net.minecraft.util.math.GlobalPos;
-
-import java.util.UUID;
 
 public class RiptideClient implements ClientModInitializer {
 	public static void registerModelPredicateProviders() {
