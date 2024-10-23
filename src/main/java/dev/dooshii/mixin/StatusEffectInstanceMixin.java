@@ -15,7 +15,7 @@ public class StatusEffectInstanceMixin {
     @Inject(method = "update", at = @At(value = "INVOKE", target = "Lnet/minecraft/entity/effect/StatusEffectInstance;updateDuration()I", shift = At.Shift.AFTER))
     public void dampEffectUpdate(LivingEntity entity, Runnable overwriteCallback, CallbackInfoReturnable<Boolean> cir) {
         StatusEffectInstance thisObject = (StatusEffectInstance)(Object)this;
-        if (!thisObject.getEffectType().matchesId(Identifier.of(Riptide.MOD_ID, "damp"))) {
+        if (!thisObject.getEffectType().matchesId(Riptide.id("damp"))) {
             return;
         }
 

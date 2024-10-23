@@ -21,11 +21,16 @@ public class Riptide implements ModInitializer {
 	public static final StatusEffect DAMP_EFFECT;
 
 	static {
-		DAMP_EFFECT = Registry.register(Registries.STATUS_EFFECT, Identifier.of(Riptide.MOD_ID, "damp"), new DampStatusEffect());
+		DAMP_EFFECT = Registry.register(Registries.STATUS_EFFECT, Riptide.id("damp"), new DampStatusEffect());
 	}
 
 	@Override
 	public void onInitialize() {
 		ModItems.onInitialize();
+		ModComponents.initialize();
+	}
+
+	public static Identifier id(String id) {
+		return Identifier.of(Riptide.MOD_ID, id);
 	}
 }

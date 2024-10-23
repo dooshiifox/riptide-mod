@@ -27,7 +27,7 @@ public class AbstractInventoryScreenMixin {
 			)
 	)
 	private void drawDampEffectTimer(DrawContext context, int x, int height, Iterable<StatusEffectInstance> statusEffects, CallbackInfo ci, @Local(ordinal = 2) int i, @Local StatusEffectInstance statusEffectInstance, @Local(ordinal = 1) Text durationText) {
-		if (!statusEffectInstance.getEffectType().matchesId(Identifier.of(Riptide.MOD_ID, "damp"))) {
+		if (!statusEffectInstance.getEffectType().matchesId(Riptide.id("damp"))) {
 			return;
 		}
 
