@@ -49,8 +49,8 @@ public class TrackingCompassState extends NeedleAngleState {
     }
 
     private static float getSpinningAngle(long time) {
-        Long t = time % 32L;
-        return t.floatValue() / 32.0f;
+        long t = time % 32L;
+        return (float) t / 32.0f;
     }
 
     private float getAimlessAngle(int seed, long time) {

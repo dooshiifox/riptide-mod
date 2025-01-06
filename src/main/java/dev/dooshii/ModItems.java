@@ -16,7 +16,6 @@ import net.minecraft.registry.Registry;
 import net.minecraft.registry.RegistryKey;
 import net.minecraft.registry.RegistryKeys;
 import net.minecraft.registry.entry.RegistryEntry;
-import net.minecraft.util.Identifier;
 
 import java.util.function.BiFunction;
 import java.util.function.Function;
@@ -81,7 +80,7 @@ public class ModItems {
     }
 
     public static Item register(Block block, UnaryOperator<Item.Settings> settingsOperator) {
-        return register(block, (BiFunction<Block, Item.Settings, Item>)((blockx, settings) -> new BlockItem(blockx, (Item.Settings)settingsOperator.apply(settings))));
+        return register(block, ((blockx, settings) -> new BlockItem(blockx, settingsOperator.apply(settings))));
     }
 
     public static Item register(Block block, Block... blocks) {
@@ -100,7 +99,7 @@ public class ModItems {
 
     public static Item register(Block block, BiFunction<Block, Item.Settings, Item> factory, Item.Settings settings) {
         return register(
-                keyOf(block.getRegistryEntry().registryKey()), itemSettings -> (Item)factory.apply(block, itemSettings), settings.useBlockPrefixedTranslationKey()
+                keyOf(block.getRegistryEntry().registryKey()), itemSettings -> factory.apply(block, itemSettings), settings.useBlockPrefixedTranslationKey()
         );
     }
 
@@ -125,7 +124,7 @@ public class ModItems {
     }
 
     public static Item register(RegistryKey<Item> key, Function<Item.Settings, Item> factory, Item.Settings settings) {
-        Item item = (Item)factory.apply(settings.registryKey(key));
+        Item item = factory.apply(settings.registryKey(key));
         if (item instanceof BlockItem blockItem) {
             blockItem.appendBlocks(Item.BLOCK_ITEMS, item);
         }
