@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "equipment",
+  "ingredients": [
+    "minecraft:compass",
+    "minecraft:ender_eye"
+  ],
+  "result": {
+    "count": 1,
+    "id": "riptide:tracking_compass"
+  }
+}
