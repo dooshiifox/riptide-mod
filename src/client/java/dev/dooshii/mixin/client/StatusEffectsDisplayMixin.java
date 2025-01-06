@@ -5,7 +5,7 @@ import dev.dooshii.entity.effect.DampStatusEffect;
 import dev.dooshii.Riptide;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.gui.DrawContext;
-import net.minecraft.client.gui.screen.ingame.AbstractInventoryScreen;
+import net.minecraft.client.gui.screen.ingame.StatusEffectsDisplay;
 import net.minecraft.client.network.ClientPlayerEntity;
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.text.Text;
@@ -13,8 +13,8 @@ import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.*;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
-@Mixin(AbstractInventoryScreen.class)
-public class AbstractInventoryScreenMixin {
+@Mixin(StatusEffectsDisplay.class)
+public class StatusEffectsDisplayMixin {
 	@Inject(
 			method = "drawStatusEffectDescriptions",
 			at = @At(value = "INVOKE", target = "Lnet/minecraft/client/gui/DrawContext;drawTextWithShadow(Lnet/minecraft/client/font/TextRenderer;Lnet/minecraft/text/Text;III)I", shift = At.Shift.AFTER),

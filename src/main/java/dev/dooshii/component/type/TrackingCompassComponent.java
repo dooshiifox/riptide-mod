@@ -9,6 +9,7 @@ import net.minecraft.entity.Entity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.network.codec.PacketCodec;
 import net.minecraft.network.codec.PacketCodecs;
+import net.minecraft.server.network.ServerPlayerEntity;
 import net.minecraft.server.world.ServerWorld;
 import net.minecraft.util.math.GlobalPos;
 
@@ -16,7 +17,7 @@ import java.util.Objects;
 import java.util.Optional;
 import java.util.UUID;
 
-public record TrackingCompassComponent(Optional<GlobalPos> target, Optional<GameProfile> player) {
+public record TrackingCompassComponent(Optional<GlobalPos> target, Optional<GameProfile> player, boolean differentDimension) {
     public static final Codec<GameProfile> GAME_PROFILE_CODEC = RecordCodecBuilder.create((builder2) -> builder2.group(
             Codec.sizeLimitedString(16).fieldOf("username").forGetter(GameProfile::getName),
             Codec.STRING.flatXmap((uuid) -> {
@@ -30,7 +31,8 @@ public record TrackingCompassComponent(Optional<GlobalPos> target, Optional<Game
     ).apply(builder2, (username, uuid) -> new GameProfile(uuid, username)));
     public static final Codec<TrackingCompassComponent> CODEC = RecordCodecBuilder.create((builder) -> builder.group(
             GlobalPos.CODEC.optionalFieldOf("target").forGetter(TrackingCompassComponent::target),
-            GAME_PROFILE_CODEC.optionalFieldOf("player").forGetter(TrackingCompassComponent::player)
+            GAME_PROFILE_CODEC.optionalFieldOf("player").forGetter(TrackingCompassComponent::player),
+            Codec.BOOL.fieldOf("differentDimension").forGetter(TrackingCompassComponent::differentDimension)
     ).apply(builder, TrackingCompassComponent::new));
     public static final PacketCodec<ByteBuf, TrackingCompassComponent> PACKET_CODEC;
     static {
@@ -39,19 +41,22 @@ public record TrackingCompassComponent(Optional<GlobalPos> target, Optional<Game
                 TrackingCompassComponent::target,
                 PacketCodecs.GAME_PROFILE.collect(PacketCodecs::optional),
                 TrackingCompassComponent::player,
+                PacketCodecs.BOOLEAN,
+                TrackingCompassComponent::differentDimension,
                 TrackingCompassComponent::new
         );
     }
 
     public Optional<GlobalPos> target() { return this.target; }
     public Optional<GameProfile> player() { return this.player; }
+    public boolean differentDimension() { return this.differentDimension; }
 
     static public GlobalPos getEntityGPos(Entity entity) {
         return GlobalPos.create(entity.getWorld().getRegistryKey(), entity.getBlockPos());
     }
 
-    public Optional<PlayerEntity> getOnlinePlayer(ServerWorld world) {
-        return this.player().map((player) -> world.getPlayerByUuid(player.getId()));
+    public Optional<ServerPlayerEntity> getOnlinePlayer(ServerWorld world) {
+        return this.player().map((player) -> world.getServer().getPlayerManager().getPlayer(player.getId()));
     }
 
     public boolean isTargetedPlayer(Entity entity) {
@@ -64,11 +69,13 @@ public record TrackingCompassComponent(Optional<GlobalPos> target, Optional<Game
     public TrackingCompassComponent update(ServerWorld world) {
         Optional<GlobalPos> target = Optional.empty();
         Optional<GameProfile> player = this.player();
-        Optional<PlayerEntity> onlinePlayer = this.getOnlinePlayer(world);
+        Optional<ServerPlayerEntity> onlinePlayer = this.getOnlinePlayer(world);
+        boolean diffDimension = true;
 
         if (onlinePlayer.isPresent()) {
-            PlayerEntity p = onlinePlayer.get();
+            ServerPlayerEntity p = onlinePlayer.get();
             target = Optional.of(TrackingCompassComponent.getEntityGPos(p));
+            diffDimension = world != p.getWorld();
 
             String cachedName = player.orElseThrow().getName();
             String realName = p.getGameProfile().getName();
@@ -77,7 +84,7 @@ public record TrackingCompassComponent(Optional<GlobalPos> target, Optional<Game
             }
         }
 
-        return new TrackingCompassComponent(target, player);
+        return new TrackingCompassComponent(target, player, diffDimension);
     }
 }
 

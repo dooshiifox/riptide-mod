@@ -1,10 +1,17 @@
 {
   "effect.riptide.damp": "Damp",
+  "effect.riptide.long_damp": "Damp",
   "item.minecraft.lingering_potion.effect.damp": "Lingering Potion of Damp",
+  "item.minecraft.lingering_potion.effect.long_damp": "Lingering Potion of Damp",
   "item.minecraft.potion.effect.damp": "Potion of Damp",
+  "item.minecraft.potion.effect.long_damp": "Potion of Damp",
   "item.minecraft.splash_potion.effect.damp": "Splash Potion of Damp",
+  "item.minecraft.splash_potion.effect.long_damp": "Splash Potion of Damp",
   "item.minecraft.tipped_arrow.effect.damp": "Arrow of Damp",
+  "item.minecraft.tipped_arrow.effect.long_damp": "Arrow of Damp",
   "item.riptide.tracking_compass": "Tracking Compass",
   "item.riptide.tracking_compass.info.no_target": "Click on a player to track them.",
-  "item.riptide.tracking_compass.info.player": "Tracking %1$s"
+  "item.riptide.tracking_compass.info.player": "Tracking %1$s",
+  "item.riptide.tracking_compass.info.player_different_dimension": "Player is not in this world.",
+  "item.riptide.tracking_compass.info.player_offline": "Player is not online."
 }

@@ -14,9 +14,12 @@ import net.minecraft.potion.Potions;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.registry.RegistryKey;
+import net.minecraft.registry.RegistryKeys;
 import net.minecraft.registry.entry.RegistryEntry;
 import net.minecraft.util.Identifier;
 
+import java.util.function.BiFunction;
+import java.util.function.Function;
 import java.util.function.UnaryOperator;
 
 public class ModItems {
@@ -24,6 +27,7 @@ public class ModItems {
             Registries.POTION,
             Riptide.id("damp"),
             new Potion(
+                    "damp",
                     new StatusEffectInstance(
                             Registries.STATUS_EFFECT.getEntry(Riptide.DAMP_EFFECT),
                             // 3:30
@@ -33,14 +37,14 @@ public class ModItems {
             Registries.POTION,
             Riptide.id("long_damp"),
             new Potion(
-                    "damp",
+                    "long_damp",
                     new StatusEffectInstance(
                             Registries.STATUS_EFFECT.getEntry(Riptide.DAMP_EFFECT),
                             // 8:00
                             9600,
                             0)));
 
-    public static final Item TRACKING_COMPASS = register("tracking_compass", new TrackingCompassItem(new Item.Settings()));
+    public static final Item TRACKING_COMPASS = register("tracking_compass", TrackingCompassItem::new, new Item.Settings());
 
     public static void onInitialize() {
         FabricBrewingRecipeRegistryBuilder.BUILD.register(builder -> {
@@ -60,43 +64,70 @@ public class ModItems {
                 .register((itemGroup) -> itemGroup.add(ModItems.TRACKING_COMPASS));
     }
 
+    private static RegistryKey<Item> keyOf(String id) {
+        return RegistryKey.of(RegistryKeys.ITEM, Riptide.id(id));
+    }
+
+    private static RegistryKey<Item> keyOf(RegistryKey<Block> blockKey) {
+        return RegistryKey.of(RegistryKeys.ITEM, blockKey.getValue());
+    }
+
     public static Item register(Block block) {
-        return register(new BlockItem(block, new Item.Settings()));
+        return register(block, BlockItem::new);
+    }
+
+    public static Item register(Block block, Item.Settings settings) {
+        return register(block, BlockItem::new, settings);
     }
 
     public static Item register(Block block, UnaryOperator<Item.Settings> settingsOperator) {
-        return register(new BlockItem(block, settingsOperator.apply(new Item.Settings())));
+        return register(block, (BiFunction<Block, Item.Settings, Item>)((blockx, settings) -> new BlockItem(blockx, (Item.Settings)settingsOperator.apply(settings))));
     }
 
     public static Item register(Block block, Block... blocks) {
-        BlockItem blockItem = new BlockItem(block, new Item.Settings());
+        Item item = register(block);
 
         for (Block block2 : blocks) {
-            Item.BLOCK_ITEMS.put(block2, blockItem);
+            Item.BLOCK_ITEMS.put(block2, item);
         }
 
-        return register(blockItem);
+        return item;
     }
 
-    public static Item register(BlockItem item) {
-        return register(item.getBlock(), item);
+    public static Item register(Block block, BiFunction<Block, Item.Settings, Item> factory) {
+        return register(block, factory, new Item.Settings());
     }
 
-    public static Item register(Block block, Item item) {
-        return register(Registries.BLOCK.getId(block), item);
+    public static Item register(Block block, BiFunction<Block, Item.Settings, Item> factory, Item.Settings settings) {
+        return register(
+                keyOf(block.getRegistryEntry().registryKey()), itemSettings -> (Item)factory.apply(block, itemSettings), settings.useBlockPrefixedTranslationKey()
+        );
     }
 
-    public static Item register(String id, Item item) {
-        return register(Riptide.id(id), item);
+    public static Item register(String id, Function<Item.Settings, Item> factory) {
+        return register(keyOf(id), factory, new Item.Settings());
     }
 
-    public static Item register(Identifier id, Item item) {
-        return register(RegistryKey.of(Registries.ITEM.getKey(), id), item);
+    public static Item register(String id, Function<Item.Settings, Item> factory, Item.Settings settings) {
+        return register(keyOf(id), factory, settings);
     }
 
-    public static Item register(RegistryKey<Item> key, Item item) {
-        if (item instanceof BlockItem) {
-            ((BlockItem)item).appendBlocks(Item.BLOCK_ITEMS, item);
+    public static Item register(String id, Item.Settings settings) {
+        return register(keyOf(id), Item::new, settings);
+    }
+
+    public static Item register(String id) {
+        return register(keyOf(id), Item::new, new Item.Settings());
+    }
+
+    public static Item register(RegistryKey<Item> key, Function<Item.Settings, Item> factory) {
+        return register(key, factory, new Item.Settings());
+    }
+
+    public static Item register(RegistryKey<Item> key, Function<Item.Settings, Item> factory, Item.Settings settings) {
+        Item item = (Item)factory.apply(settings.registryKey(key));
+        if (item instanceof BlockItem blockItem) {
+            blockItem.appendBlocks(Item.BLOCK_ITEMS, item);
         }
 
         return Registry.register(Registries.ITEM, key, item);

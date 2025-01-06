@@ -1,7 +1,7 @@
 package dev.dooshii.item;
 
-import com.mojang.authlib.GameProfile;
 import dev.dooshii.ModComponents;
+import dev.dooshii.Riptide;
 import dev.dooshii.component.type.TrackingCompassComponent;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.LivingEntity;
@@ -25,22 +25,38 @@ public class TrackingCompassItem extends Item {
         super(settings);
     }
 
-    public Optional<GameProfile> getTrackedPlayer(ItemStack stack) {
-        TrackingCompassComponent component = stack.getOrDefault(ModComponents.TRACKING_COMPASS_COMPONENT, new TrackingCompassComponent(Optional.empty(), Optional.empty()));
-        return component.player();
+    static public TrackingCompassComponent getComponent(ItemStack stack) {
+        return stack.getOrDefault(ModComponents.TRACKING_COMPASS_COMPONENT, new TrackingCompassComponent(
+                Optional.empty(),
+                Optional.empty(),
+                false
+        ));
     }
 
     @Override
     public boolean hasGlint(ItemStack stack) {
-        return this.getTrackedPlayer(stack).isPresent() || super.hasGlint(stack);
+        return getComponent(stack).player().isPresent() || super.hasGlint(stack);
     }
 
     public void appendTooltip(ItemStack stack, TooltipContext context, List<Text> tooltip, TooltipType type) {
-        this.getTrackedPlayer(stack).ifPresentOrElse(playerName -> {
-            tooltip.add(Text.translatable("item.riptide.tracking_compass.info.player", playerName.getName()).formatted(Formatting.GOLD));
-        }, () -> {
+        var component = getComponent(stack);
+
+        if (component.player().isEmpty()) {
             tooltip.add(Text.translatable("item.riptide.tracking_compass.info.no_target").formatted(Formatting.GRAY));
-        });
+            return;
+        }
+
+        var player = component.player().get();
+        tooltip.add(Text.translatable("item.riptide.tracking_compass.info.player", player.getName()).formatted(Formatting.GOLD));
+        // If there is a player but no target, the player is offline.
+        // If there is a player and a target but the target is in the wrong world, show an error.
+        // If the player is online and in the same world, show no additional tooltip.
+        Riptide.LOGGER.info("Target: {} | diff dim: {}", component.target(), component.differentDimension());
+        if (component.target().isEmpty()) {
+            tooltip.add(Text.translatable("item.riptide.tracking_compass.info.player_offline").formatted(Formatting.GRAY, Formatting.ITALIC));
+        } else if (component.differentDimension()) {
+            tooltip.add(Text.translatable("item.riptide.tracking_compass.info.player_different_dimension").formatted(Formatting.GRAY, Formatting.ITALIC));
+        }
     }
 
     @Override
@@ -55,7 +71,11 @@ public class TrackingCompassItem extends Item {
         }
 
         GlobalPos globalPos = TrackingCompassComponent.getEntityGPos(targetPlayer);
-        TrackingCompassComponent newComponent = new TrackingCompassComponent(Optional.of(globalPos), Optional.of(targetPlayer.getGameProfile()));
+        TrackingCompassComponent newComponent = new TrackingCompassComponent(
+                Optional.of(globalPos),
+                Optional.of(targetPlayer.getGameProfile()),
+                false
+        );
         stack.set(ModComponents.TRACKING_COMPASS_COMPONENT, newComponent);
         user.setStackInHand(hand, stack);
         return ActionResult.SUCCESS;

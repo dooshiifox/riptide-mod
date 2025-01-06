@@ -1,11 +1,14 @@
 {
-	"required": true,
-	"package": "dev.dooshii.mixin.client",
-	"compatibilityLevel": "JAVA_21",
-	"client": [
-      "AbstractInventoryScreenMixin"
-	],
-	"injectors": {
-		"defaultRequire": 1
-	}
+  "required": true,
+  "package": "dev.dooshii.mixin.client",
+  "compatibilityLevel": "JAVA_21",
+  "client": [
+    "StatusEffectsDisplayMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "mixins": [
+    "StatusEffectsDisplayMixin"
+  ]
 }

@@ -20,7 +20,8 @@
 		],
 		"client": [
 			"dev.dooshii.RiptideClient"
-		]
+		],
+		"fabric-datagen": ["dev.dooshii.RiptideDataGenerator"]
 	},
 	"mixins": [
 		"riptide.mixins.json",
@@ -31,8 +32,8 @@
 	],
 	"accessWidener" : "riptide.accesswidener",
 	"depends": {
-		"fabricloader": ">=0.16.7",
-		"minecraft": "~1.21",
+		"fabricloader": ">=0.16.9",
+		"minecraft": "~1.21.4",
 		"java": ">=21",
 		"fabric-api": "*"
 	}

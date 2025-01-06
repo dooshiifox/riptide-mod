@@ -1,12 +1,13 @@
 package dev.dooshii.mixin;
 
+import net.minecraft.item.equipment.EquipmentType;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
-@Mixin(targets = "net.minecraft.item.ArmorItem$Type")
-public class ArmorItemTypeMixin {
+@Mixin(EquipmentType.class)
+public class EquipmentTypeMixin {
     @Inject(method = "getMaxDamage", at = @At("HEAD"), cancellable = true)
     public void getMaxDamage(int multiplier, CallbackInfoReturnable<Integer> cir) {
         // Leather

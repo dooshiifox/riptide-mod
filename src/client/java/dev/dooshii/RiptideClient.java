@@ -1,23 +1,16 @@
 package dev.dooshii;
 
 import dev.dooshii.component.type.TrackingCompassComponent;
+import dev.dooshii.tracking_compass.TrackingCompassProperty;
 import net.fabricmc.api.ClientModInitializer;
-import net.minecraft.client.item.CompassAnglePredicateProvider;
-import net.minecraft.client.item.ModelPredicateProviderRegistry;
+//import net.minecraft.client.item.CompassAnglePredicateProvider;
+//import net.minecraft.client.item.ModelPredicateProviderRegistry;
+import net.minecraft.client.render.item.property.numeric.NumericProperties;
 import net.minecraft.util.Identifier;
 
 public class RiptideClient implements ClientModInitializer {
-	public static void registerModelPredicateProviders() {
-		ModelPredicateProviderRegistry.register(ModItems.TRACKING_COMPASS, Identifier.ofVanilla("angle"), new CompassAnglePredicateProvider((world, stack, entity) -> {
-			TrackingCompassComponent component = stack.get(ModComponents.TRACKING_COMPASS_COMPONENT);
-			// Nothing is tracked
-			if (component == null) return null;
-
-			// Player holding item is one being tracked
-			if (component.isTargetedPlayer(entity)) return null;
-
-			return component.target().orElse(null);
-		}));
+	public void registerModelPredicateProviders() {
+		NumericProperties.ID_MAPPER.put(Riptide.id("angle"), TrackingCompassProperty.CODEC);
 	}
 
 	@Override

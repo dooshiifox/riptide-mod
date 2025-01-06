@@ -9,6 +9,7 @@ import net.minecraft.registry.Registries;
 import net.minecraft.registry.entry.RegistryEntry;
 import net.minecraft.registry.tag.BiomeTags;
 import net.minecraft.util.math.BlockPos;
+import net.minecraft.world.World;
 import net.minecraft.world.biome.Biome;
 
 public class DampStatusEffect extends StatusEffect {
@@ -22,11 +23,12 @@ public class DampStatusEffect extends StatusEffect {
 
     public static Modifier getModifier(LivingEntity entity) {
         BlockPos pos = entity.getBlockPos();
-        RegistryEntry<Biome> biome = entity.getWorld().getBiome(pos);
+        World world = entity.getWorld();
+        RegistryEntry<Biome> biome = world.getBiome(pos);
 
         if (biome.isIn(BiomeTags.IS_NETHER)) {
             return Modifier.Nether;
-        } else if (biome.value().isCold(pos)) {
+        } else if (biome.value().isCold(pos, world.getSeaLevel())) {
             return Modifier.Cold;
         } else if (entity.isTouchingWaterOrRain()) {
             return Modifier.Water;

@@ -3,7 +3,11 @@
   "package": "dev.dooshii.mixin",
   "compatibilityLevel": "JAVA_21",
   "mixins": [
+    "EquipmentTypeMixin",
+    "EnchantmentHelperMixin",
+    "ItemsMixin",
     "StatusEffectInstanceMixin",
+    "ToolMaterialMixin",
     "TridentItemMixin"
   ],
   "injectors": {

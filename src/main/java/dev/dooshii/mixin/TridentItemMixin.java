@@ -5,8 +5,8 @@ import net.minecraft.enchantment.EnchantmentHelper;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.TridentItem;
+import net.minecraft.util.ActionResult;
 import net.minecraft.util.Hand;
-import net.minecraft.util.TypedActionResult;
 import net.minecraft.world.World;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
@@ -18,11 +18,11 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 public class TridentItemMixin {
 	// Controls the 'about to throw' animation
 	@Inject(method = "use", at = @At("HEAD"), cancellable = true)
-	public void use(World world, PlayerEntity user, Hand hand, CallbackInfoReturnable<TypedActionResult<ItemStack>> cir) {
+	public void use(World world, PlayerEntity user, Hand hand, CallbackInfoReturnable<ActionResult> cir) {
 		ItemStack itemStack = user.getStackInHand(hand);
 		if (EnchantmentHelper.getTridentSpinAttackStrength(itemStack, user) > 0.0F && DampStatusEffect.canUseRiptide(user)) {
 			user.setCurrentHand(hand);
-			cir.setReturnValue(TypedActionResult.consume(itemStack));
+			cir.setReturnValue(ActionResult.CONSUME);
 		}
 	}
 
