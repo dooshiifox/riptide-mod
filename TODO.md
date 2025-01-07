@@ -21,7 +21,7 @@
 - improve inventory somehow
 - better enchanting
   - remove mending from everything else (DONE)
-    - mending-like effect automatically on elytra
+    - mending-like effect automatically on elytra (DONE)
   - durability increased (DONE)
     - to compensate for the fact we remove mending
   - improve how much repairs repair (DONE)
@@ -29,7 +29,7 @@
     - make netherite repairs cheaper by using scraps (DONE)
   - make villagers only sell low-level books
   - make soul speed and swift sneak easier to find
-    - to compensate for the fact we remove mending 
+    - to compensate for the fact we remove mending
   - enchanting table gives slightly better enchants
   - use an emerald instead of lapis for even better enchants
     - as a consequence, a curse is now on the item. the curse is the preview enchant
