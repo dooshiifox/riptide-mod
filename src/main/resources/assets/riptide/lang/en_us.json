@@ -13,5 +13,8 @@
   "item.riptide.tracking_compass.info.no_target": "Click on a player to track them.",
   "item.riptide.tracking_compass.info.player": "Tracking %1$s",
   "item.riptide.tracking_compass.info.player_different_dimension": "Player is not in this world.",
-  "item.riptide.tracking_compass.info.player_offline": "Player is not online."
+  "item.riptide.tracking_compass.info.player_offline": "Player is not online.",
+  "enchantment.riptide.rabbits_hop": "Rabbit's Hop",
+  "enchantment.riptide.bolt": "Bolt",
+  "enchantment.riptide.mountaineer": "Mountaineer"
 }

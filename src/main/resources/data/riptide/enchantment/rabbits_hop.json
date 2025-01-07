@@ -1,0 +1,44 @@
+{
+  "anvil_cost": 8,
+  "description": {
+    "translate": "enchantment.riptide.rabbits_hop"
+  },
+  "effects": {
+    "minecraft:attributes": [
+      {
+        "amount": {
+          "type": "minecraft:linear",
+          "base": 0.075,
+          "per_level_above_first": 0.075
+        },
+        "attribute": "minecraft:jump_strength",
+        "id": "riptide:enchantment.rabbits_hop",
+        "operation": "add_value"
+      },
+      {
+        "amount": {
+          "type": "minecraft:linear",
+          "base": 1,
+          "per_level_above_first": 1.5
+        },
+        "attribute": "minecraft:safe_fall_distance",
+        "id": "riptide:enchantment.rabbits_hop",
+        "operation": "add_value"
+      }
+    ]
+  },
+  "max_cost": {
+    "base": 75,
+    "per_level_above_first": 25
+  },
+  "max_level": 2,
+  "min_cost": {
+    "base": 25,
+    "per_level_above_first": 25
+  },
+  "slots": [
+    "legs"
+  ],
+  "supported_items": "#minecraft:enchantable/leg_armor",
+  "weight": 1
+}

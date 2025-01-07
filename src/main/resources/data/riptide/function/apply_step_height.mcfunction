@@ -1,0 +1,2 @@
+execute as @a if predicate riptide:apply_mountaineer run attribute @s minecraft:step_height base set 1
+execute as @a unless predicate riptide:apply_mountaineer run attribute @s minecraft:step_height base set 0.5

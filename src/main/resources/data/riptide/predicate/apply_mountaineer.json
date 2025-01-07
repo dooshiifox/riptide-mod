@@ -1,0 +1,36 @@
+{
+  "condition": "minecraft:all_of",
+  "terms": [
+    {
+      "condition": "minecraft:inverted",
+      "term": {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+          "vehicle": {}
+        }
+      }
+    },
+    {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "flags": {
+          "is_on_ground": true,
+          "is_sneaking": false
+        },
+        "equipment": {
+          "feet": {
+            "predicates": {
+              "minecraft:enchantments": [
+                {
+                  "enchantments": ["riptide:mountaineer"]
+                }
+              ]
+            }
+          }
+        }
+      }
+    }
+  ]
+}
