@@ -1,125 +1,40 @@
 package dev.dooshii.mixin;
 
 import net.minecraft.item.*;
+import net.minecraft.registry.RegistryKey;
+import net.minecraft.util.Identifier;
 import org.spongepowered.asm.mixin.Mixin;
-import org.spongepowered.asm.mixin.injection.At;
-import org.spongepowered.asm.mixin.injection.Constant;
-import org.spongepowered.asm.mixin.injection.ModifyConstant;
-import org.spongepowered.asm.mixin.injection.Slice;
+import org.spongepowered.asm.mixin.injection.*;
+import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
+import java.util.function.Function;
 
 @Mixin(Items.class)
 public class ItemsMixin {
-//    @ModifyConstant(
-//            method = "<clinit>",
-//            constant = @Constant(intValue = 64),
-//            slice = @Slice(
-//                    from = @At(value = "NEW", target = "(Lnet/minecraft/item/Item$Settings;)Lnet/minecraft/item/FlintAndSteelItem;"),
-//                    to = @At(value = "NEW", target = "(Lnet/minecraft/item/Item$Settings;)Lnet/minecraft/item/FlintAndSteelItem;", shift = At.Shift.BY, by = 5)
-//            ),
-//            allow = 1
-//    )
-//    private static int flintAndSteelDurability(int constant) {
-//        return 250;
-//    }
-//
-//    @ModifyConstant(
-//            method = "<clinit>",
-//            constant = @Constant(intValue = 384),
-//            slice = @Slice(
-//                    from = @At(value = "NEW", target = "(Lnet/minecraft/item/Item$Settings;)Lnet/minecraft/item/BowItem;"),
-//                    to = @At(value = "NEW", target = "(Lnet/minecraft/item/Item$Settings;)Lnet/minecraft/item/BowItem;", shift = At.Shift.BY, by = 5)
-//            ),
-//            allow = 1
-//    )
-//    private static int bowDurability(int constant) {
-//        return 1250;
-//    }
-//
-//    @ModifyConstant(
-//            method = "<clinit>",
-//            constant = @Constant(intValue = 64),
-//            slice = @Slice(
-//                    from = @At(value = "NEW", target = "(Lnet/minecraft/item/Item$Settings;)Lnet/minecraft/item/FishingRodItem;"),
-//                    to = @At(value = "NEW", target = "(Lnet/minecraft/item/Item$Settings;)Lnet/minecraft/item/FishingRodItem;", shift = At.Shift.BY, by = 5)
-//            ),
-//            allow = 1
-//    )
-//    private static int fishingRodDurability(int constant) {
-//        return 400;
-//    }
-//
-//    @ModifyConstant(
-//            method = "<clinit>",
-//            constant = @Constant(intValue = 238),
-//            slice = @Slice(
-//                    from = @At(value = "NEW", target = "(Lnet/minecraft/item/Item$Settings;)Lnet/minecraft/item/ShearsItem;"),
-//                    to = @At(value = "NEW", target = "(Lnet/minecraft/item/Item$Settings;)Lnet/minecraft/item/ShearsItem;", shift = At.Shift.BY, by = 5)
-//            ),
-//            allow = 1
-//    )
-//    private static int shearsDurability(int constant) {
-//        return 750;
-//    }
-//
-//    @ModifyConstant(
-//            method = "<clinit>",
-//            constant = @Constant(intValue = 500),
-//            slice = @Slice(
-//                    from = @At(value = "NEW", target = "(Lnet/minecraft/item/Item$Settings;)Lnet/minecraft/item/MaceItem;")
-//            ),
-//            allow = 1
-//    )
-//    private static int maceDurability(int constant) {
-//        return 5000;
-//    }
-//
-//    @ModifyConstant(
-//            method = "<clinit>",
-//            constant = @Constant(intValue = 336),
-//            slice = @Slice(
-//                    from = @At(value = "NEW", target = "(Lnet/minecraft/item/Item$Settings;)Lnet/minecraft/item/ShieldItem;"),
-//                    to = @At(value = "NEW", target = "(Lnet/minecraft/item/Item$Settings;)Lnet/minecraft/item/ShieldItem;", shift = At.Shift.BY, by = 5)
-//            ),
-//            allow = 1
-//    )
-//    private static int shieldDurability(int constant) {
-//        return 1000;
-//    }
-//
-//    @ModifyConstant(
-//            method = "<clinit>",
-//            constant = @Constant(intValue = 250),
-//            slice = @Slice(
-//                    from = @At(value = "NEW", target = "(Lnet/minecraft/item/Item$Settings;)Lnet/minecraft/item/TridentItem;")
-//            ),
-//            allow = 1
-//    )
-//    private static int tridentDurability(int constant) {
-//        return 3000;
-//    }
-//
-//    @ModifyConstant(
-//            method = "<clinit>",
-//            constant = @Constant(intValue = 465),
-//            slice = @Slice(
-//                    from = @At(value = "NEW", target = "(Lnet/minecraft/item/Item$Settings;)Lnet/minecraft/item/CrossbowItem;")
-//            ),
-//            allow = 1
-//    )
-//    private static int crossbowDurability(int constant) {
-//        // Give the crossbow more durability than a bow so it has more reason to exist
-//        return 2000;
-//    }
-//
-//    @ModifyConstant(
-//            method = "<clinit>",
-//            constant = @Constant(intValue = 64),
-//            slice = @Slice(
-//                    from = @At(value = "NEW", target = "(Lnet/minecraft/item/Item$Settings;)Lnet/minecraft/item/BrushItem;")
-//            ),
-//            allow = 1
-//    )
-//    private static int brushDurability(int constant) {
-//        return 200;
-//    }
+    @Inject(method = "register(Lnet/minecraft/registry/RegistryKey;Ljava/util/function/Function;Lnet/minecraft/item/Item$Settings;)Lnet/minecraft/item/Item;", at = @At("HEAD"))
+    private static void a(RegistryKey<Item> key, Function<Item.Settings, Item> factory, Item.Settings settings, CallbackInfoReturnable<Item> cir) {
+        record DamageAdjuster(RegistryKey<Item> key, Item.Settings settings) {
+            DamageAdjuster adjust(String id, int damage) {
+                if (key.getValue().equals(Identifier.ofVanilla(id))) {
+                    settings.maxDamage(damage);
+                }
+                return this;
+            }
+        }
+
+        new DamageAdjuster(key, settings)
+                .adjust("flint_and_steel", 250)
+                .adjust("carrot_on_a_stick", 100)
+                .adjust("warped_fungus_on_a_stick", 250)
+                .adjust("bow", 1250)
+                .adjust("fishing_rod", 400)
+                .adjust("shears", 750)
+                // Maces are hard to get, make them durable!
+                .adjust("mace", 5000)
+                .adjust("shield", 1000)
+                // Tridents are hard to get, make them durable!
+                .adjust("trident", 3000)
+                // Give the crossbow more durability than a bow so it has more reason to exist
+                .adjust("crossbow", 2000)
+                .adjust("brush", 200);
+    }
 }

@@ -1,8 +1,11 @@
 package dev.dooshii;
 
+import dev.dooshii.enchantment.DisableMending;
 import dev.dooshii.entity.effect.DampStatusEffect;
+import dev.dooshii.event.CacheEnchantmentRegistryEvent;
 import net.fabricmc.api.ModInitializer;
 
+import net.fabricmc.fabric.api.event.lifecycle.v1.ServerLifecycleEvents;
 import net.minecraft.entity.effect.StatusEffect;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
@@ -28,6 +31,8 @@ public class Riptide implements ModInitializer {
 	public void onInitialize() {
 		ModItems.onInitialize();
 		ModComponents.initialize();
+
+		DisableMending.init();
 	}
 
 	public static Identifier id(String id) {
