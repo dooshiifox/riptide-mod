@@ -8,6 +8,8 @@
     "EnchantRandomlyLootFunctionMixin",
     "EquipmentTypeMixin",
     "ExperienceOrbEntityMixin",
+    "FireworkRocketEntityMixin",
+    "FireworkRocketItemMixin",
     "ItemEnchantmentsComponentBuilderMixin",
     "ItemsMixin",
     "LivingEntityMixin",

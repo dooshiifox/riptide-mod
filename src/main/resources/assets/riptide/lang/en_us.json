@@ -1,7 +1,9 @@
 {
   "effect.riptide.damp": "Damp",
   "effect.riptide.long_damp": "Damp",
-  "attribute.name.midair_jump": "Midair Jump",
+  "attribute.name.midair_jump": "Midair Jumps",
+  "attribute.name.elytra_boost": "Elytra Boosts",
+  "attribute.name.elytra_boost_strength": "Elytra Boost Strength",
   "item.minecraft.lingering_potion.effect.damp": "Lingering Potion of Damp",
   "item.minecraft.lingering_potion.effect.long_damp": "Lingering Potion of Damp",
   "item.minecraft.potion.effect.damp": "Potion of Damp",
@@ -20,5 +22,6 @@
   "enchantment.riptide.rabbits_hop": "Rabbit's Hop",
   "enchantment.riptide.bolt": "Bolt",
   "enchantment.riptide.mountaineer": "Mountaineer",
-  "enchantment.riptide.nimbus": "Nimbus"
+  "enchantment.riptide.nimbus": "Nimbus",
+  "enchantment.riptide.burst": "Burst"
 }

@@ -30,9 +30,7 @@ public class Riptide implements ModInitializer {
         ModItems.onInitialize();
         ModComponents.initialize();
 
-        // lazy initialisation of static vars breaks registering this enchantment effect,
-        // so assign it to a junk variable.
-        var _midairJump = ExtraEntityAttributes.MIDAIR_JUMP;
+        ExtraEntityAttributes.init();
 
         DisableMending.init();
     }

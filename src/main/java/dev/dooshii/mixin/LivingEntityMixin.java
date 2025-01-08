@@ -12,6 +12,10 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 public class LivingEntityMixin {
     @Inject(method = "createLivingAttributes", at = @At("RETURN"), cancellable = true)
     private static void insertRiptideMidAirJump(CallbackInfoReturnable<DefaultAttributeContainer.Builder> cir) {
-        cir.setReturnValue(cir.getReturnValue().add(ExtraEntityAttributes.MIDAIR_JUMP));
+        cir.setReturnValue(cir.getReturnValue()
+                .add(ExtraEntityAttributes.MIDAIR_JUMP)
+                .add(ExtraEntityAttributes.ELYTRA_BOOST)
+                .add(ExtraEntityAttributes.ELYTRA_BOOST_STRENGTH)
+        );
     }
 }

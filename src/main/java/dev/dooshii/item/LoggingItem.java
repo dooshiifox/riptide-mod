@@ -33,7 +33,7 @@ public class LoggingItem extends Item {
     public ActionResult use(World world, PlayerEntity user, Hand hand) {
         // Get the current enchantment level.
         if (world instanceof ServerWorld) {
-            Riptide.LOGGER.info("Enchant level: {}", user.getAttributeValue(ExtraEntityAttributes.MIDAIR_JUMP));
+            Riptide.LOGGER.info("Enchant level: {}", user.getAttributeValue(ExtraEntityAttributes.ELYTRA_BOOST));
             return ActionResult.SUCCESS_SERVER;
         }
         return ActionResult.PASS;
