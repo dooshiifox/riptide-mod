@@ -4,16 +4,26 @@
     "translate": "enchantment.riptide.nimbus"
   },
   "effects": {
-    "riptide:midair_jump": [
+    "minecraft:attributes": [
       {
-        "effect": {
-          "type": "minecraft:add",
-          "value": {
-            "type": "minecraft:linear",
-            "base": 1,
-            "per_level_above_first": 1
-          }
-        }
+        "amount": {
+          "type": "minecraft:linear",
+          "base": 1,
+          "per_level_above_first": 1
+        },
+        "attribute": "riptide:midair_jump",
+        "id": "riptide:enchantment.nimbus",
+        "operation": "add_value"
+      },
+      {
+        "amount": {
+          "type": "minecraft:linear",
+          "base": 1,
+          "per_level_above_first": 0
+        },
+        "attribute": "minecraft:safe_fall_distance",
+        "id": "riptide:enchantment.nimbus",
+        "operation": "add_multiplied_base"
       }
     ]
   },

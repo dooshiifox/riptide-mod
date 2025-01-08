@@ -1,35 +1,36 @@
 - nicer environment
-  - terrain mods
-  - waterfall particles and sfx
-  - rivers have rushing water and sound
-  - birds live in forests
-  - crickets chirp
-  - wind sounds with moving leaves (sync up to shader)
-  - deserts and mesas have wind and sandstorms
+    - terrain mods
+    - waterfall particles and sfx
+    - rivers have rushing water and sound
+    - birds live in forests
+    - crickets chirp
+    - wind sounds with moving leaves (sync up to shader)
+    - deserts and mesas have wind and sandstorms
 - make movement/exploration more fun
-  - Riptide with an effect (DONE)
-  - track players with a compass (DONE)
-  - double-jump
-  - remove elytra firework rockets
-    - enchantment to give a boost for elytra
-      - like Create: Estrogen dash; one time use until touching ground
-  - constant speed
-  - allow walking up one block
+    - Riptide with an effect (DONE)
+    - track players with a compass (DONE)
+    - double-jump (DONE)
+    - remove elytra firework rockets
+        - enchantment to give a boost for elytra
+            - like Create: Estrogen dash; one time use until touching ground
+    - constant speed (DONE)
+    - allow walking up one block (DONE)
 - more interesting progression
-  - guidebook/quest tree
-  - make ancient debris easier to find (DONE)
+    - guidebook/quest tree
+    - make ancient debris easier to find (DONE)
 - improve inventory somehow
+- gravestones
 - better enchanting
-  - remove mending from everything else (DONE)
-    - mending-like effect automatically on elytra (DONE)
-  - durability increased (DONE)
-    - to compensate for the fact we remove mending
-  - improve how much repairs repair (DONE)
-    - 25% -> 50% (DONE)
-    - make netherite repairs cheaper by using scraps (DONE)
-  - make villagers only sell low-level books
-  - make soul speed and swift sneak easier to find
-    - to compensate for the fact we remove mending
-  - enchanting table gives slightly better enchants
-  - use an emerald instead of lapis for even better enchants
-    - as a consequence, a curse is now on the item. the curse is the preview enchant
+    - remove mending from everything else (DONE)
+        - mending-like effect automatically on elytra (DONE)
+    - durability increased (DONE)
+        - to compensate for the fact we remove mending
+    - improve how much repairs repair (DONE)
+        - 25% -> 50% (DONE)
+        - make netherite repairs cheaper by using scraps (DONE)
+    - make villagers only sell low-level books
+    - make soul speed and swift sneak easier to find
+        - to compensate for the fact we remove mending
+    - enchanting table gives slightly better enchants
+    - use an emerald instead of lapis for even better enchants
+        - as a consequence, a curse is now on the item. the curse is the preview enchant

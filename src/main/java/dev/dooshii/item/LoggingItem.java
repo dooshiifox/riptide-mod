@@ -1,7 +1,7 @@
 package dev.dooshii.item;
 
 import dev.dooshii.Riptide;
-import dev.dooshii.enchantment.ExtraEnchantmentEffects;
+import dev.dooshii.enchantment.ExtraEntityAttributes;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
@@ -33,7 +33,7 @@ public class LoggingItem extends Item {
     public ActionResult use(World world, PlayerEntity user, Hand hand) {
         // Get the current enchantment level.
         if (world instanceof ServerWorld) {
-            Riptide.LOGGER.info("Enchant level: {}", ExtraEnchantmentEffects.getMidairJump((ServerWorld) world, user));
+            Riptide.LOGGER.info("Enchant level: {}", user.getAttributeValue(ExtraEntityAttributes.MIDAIR_JUMP));
             return ActionResult.SUCCESS_SERVER;
         }
         return ActionResult.PASS;

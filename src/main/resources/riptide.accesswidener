@@ -1,2 +1,3 @@
 accessWidener v2 named
 accessible  field   net/minecraft/entity/effect/StatusEffectInstance   duration I
+accessible field net/minecraft/entity/player/PlayerEntity abilityResyncCountdown I
