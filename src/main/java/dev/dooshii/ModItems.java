@@ -1,5 +1,6 @@
 package dev.dooshii;
 
+import dev.dooshii.item.LoggingItem;
 import dev.dooshii.item.TrackingCompassItem;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.fabricmc.fabric.api.registry.FabricBrewingRecipeRegistryBuilder;
@@ -16,6 +17,7 @@ import net.minecraft.registry.Registry;
 import net.minecraft.registry.RegistryKey;
 import net.minecraft.registry.RegistryKeys;
 import net.minecraft.registry.entry.RegistryEntry;
+import net.minecraft.util.Rarity;
 
 import java.util.function.BiFunction;
 import java.util.function.Function;
@@ -44,6 +46,7 @@ public class ModItems {
                             0)));
 
     public static final Item TRACKING_COMPASS = register("tracking_compass", TrackingCompassItem::new, new Item.Settings());
+    public static final Item LOGGING = register("logging", LoggingItem::new, new Item.Settings().maxCount(1).rarity(Rarity.EPIC));
 
     public static void onInitialize() {
         FabricBrewingRecipeRegistryBuilder.BUILD.register(builder -> {
@@ -59,8 +62,12 @@ public class ModItems {
             );
         });
 
-        ItemGroupEvents.modifyEntriesEvent(ItemGroups.TOOLS)
-                .register((itemGroup) -> itemGroup.add(ModItems.TRACKING_COMPASS));
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.TOOLS).register((itemGroup) -> {
+            itemGroup.add(ModItems.TRACKING_COMPASS);
+        });
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.OPERATOR).register((itemGroup) -> {
+            itemGroup.add(ModItems.LOGGING);
+        });
     }
 
     private static RegistryKey<Item> keyOf(String id) {
