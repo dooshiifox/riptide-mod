@@ -1,0 +1,2 @@
+summon spider ~ ~ ~ {Silent:1b,CustomName:'{"text":"Sand Spider"}',attributes:[{base:18.d,id:"generic.max_health"},{Base:0.25d,id:"generic.movement_speed"}],Health:18,Tags:["scorched_spawnattemped","scorched_desert_spider","scorched_mob","scorched_desert_spider_sleepoff"]}
+summon marker ~ ~ ~ {Tags:["scorched_desert_spider_marker"]}

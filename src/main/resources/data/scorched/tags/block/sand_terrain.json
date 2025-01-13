@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+   
+    {"id": "#minecraft:dirt","required": false},
+    {"id": "minecraft:red_sand","required": false},
+    {"id": "minecraft:sand","required": false},
+    {"id": "#scorched:terracotta","required": false}
+
+
+    
+  ]
+}

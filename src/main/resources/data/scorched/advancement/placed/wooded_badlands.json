@@ -1,0 +1,30 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:placed_block",
+      "conditions": {
+        "player": {
+          "flags": {
+            "is_sneaking": false
+          }
+        },
+        "location": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "biomes": "minecraft:wooded_badlands"
+            }
+          },
+          {
+            "condition": "minecraft:block_state_property",
+            "block": "minecraft:dark_oak_sapling",
+            "properties": {}
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "scorched:sapling/dark_oak/init"
+  }
+}

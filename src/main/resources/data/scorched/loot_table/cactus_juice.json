@@ -1,0 +1,27 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:potion",
+          "functions": [
+            {
+              "function": "set_components",
+              "components": {
+                "minecraft:potion_contents": {
+                  "custom_color": 11202240
+                },
+                "minecraft:item_name": "{\"text\":\"Cactus Juice\"}",
+                "minecraft:custom_data": {
+                  "DesertCactusJuice": 1
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1 @@
+execute rotated ~ 0 positioned ^ ^-2 ^6.5 run fill ^-8 ^ ^-.5 ^8 ^ ^.5 fire replace air

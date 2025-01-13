@@ -1,0 +1,28 @@
+swamp
+    generating @ slopes (replace with very flat, ext. flat)
+sakura grove
+    grass color
+temperate highlands
+    missing features on the ground
+shrubland / hot shrubland
+    foliage colour
+mangrove swamp
+    generating @ slopes (replace with very flat, ext. flat)
+volcanic peaks
+    replace with stony peaks
+ashen savanna
+    replace with savanna
+rocky mountains
+    replace with snowy slopes or jagged peaks
+highlands
+    generating @ flat low
+forested highlands
+    replace leaves with new maple leaves
+temperate highlands, autumnal forest
+    replace leaves with new autumn leaves
+frozen river, frozen ocean
+    better snow slopes
+gravel beach
+    gravel
+beach
+    fix gravel and sand borders

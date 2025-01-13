@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:disk",
+  "config": {
+    "state_provider": {
+      "fallback": {
+        "type": "minecraft:weighted_state_provider",
+        "entries": [
+          {
+            "weight": 3,
+            "data": {
+              "Name": "minecraft:grass_block"
+            }
+          }
+        ]
+      },
+      "rules": []
+    },
+    "target": {
+      "type": "minecraft:matching_block_tag",
+      "tag": "scorched:oasis_grass_can_replace"
+    },
+    "radius": {
+      "type": "minecraft:uniform",
+        "min_inclusive": 6,
+        "max_inclusive": 8
+    },
+    "half_height": 1
+  }
+}

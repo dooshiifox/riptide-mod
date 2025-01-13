@@ -1,0 +1,31 @@
+{
+  "replace": false,
+  "values": [
+
+
+    "minecraft:oak_log",
+    "minecraft:birch_log",
+    "minecraft:dark_oak_log",
+    "minecraft:jungle_log",
+    "minecraft:spruce_log",
+    "minecraft:warped_stem",
+    "minecraft:crimson_stem",
+    "minecraft:mangrove_log",
+    "minecraft:acacia_log",
+    {"id": "minecraft:bamboo","required": false},
+
+
+    "minecraft:oak_leaves",
+    "minecraft:acacia_leaves",
+    "minecraft:birch_leaves",
+    "minecraft:dark_oak_leaves",
+    "minecraft:jungle_leaves",
+    "minecraft:spruce_leaves",
+    "minecraft:warped_wart_block",
+    "minecraft:nether_wart_block",
+    "minecraft:mangrove_leaves",
+    "minecraft:azalea_leaves",
+    "minecraft:flowering_azalea_leaves"
+    
+  ]
+}

@@ -1,0 +1,93 @@
+{
+  "type": "minecraft:random_selector",
+  "config": {
+    "features": [
+      {
+        "chance": 0.85,
+        "feature": {
+          "feature": {
+            "config": {
+              "tries": 40,
+              "xz_spread": 9,
+              "y_spread": 2,
+              "feature": {
+                "feature": {
+                  "config": {
+                    "to_place": {
+                      "type": "minecraft:weighted_state_provider",
+                      "entries": [
+                        {
+                          "weight": 1,
+                          "data": {
+                            "Name": "minecraft:pink_tulip"
+                          }
+                        },
+                        {
+                          "weight": 19,
+                          "data": {
+                            "Name": "minecraft:white_tulip"
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  "type": "minecraft:simple_block"
+                },
+                "placement": [
+                  {
+                    "type": "minecraft:block_predicate_filter",
+                    "predicate": {
+                      "type": "minecraft:matching_blocks",
+                      "blocks": [
+                        "minecraft:air",
+                        "minecraft:short_grass"
+                      ]
+                    }
+                  }
+                ]
+              }
+            },
+            "type": "minecraft:flower"
+          },
+          "placement": []
+        }
+      }
+    ],
+    "default": {
+      "feature": {
+        "config": {
+          "tries": 16,
+          "xz_spread": 5,
+          "y_spread": 2,
+          "feature": {
+            "feature": {
+              "config": {
+                "to_place": {
+                  "type": "minecraft:simple_state_provider",
+                  "state": {
+                    "Name": "minecraft:allium"
+                  }
+                }
+              },
+              "type": "minecraft:simple_block"
+            },
+            "placement": [
+              {
+                "type": "minecraft:block_predicate_filter",
+                "predicate": {
+                  "type": "minecraft:matching_blocks",
+                  "blocks": [
+                    "minecraft:air",
+                    "minecraft:short_grass"
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        "type": "minecraft:flower"
+      },
+      "placement": []
+    }
+  }
+}

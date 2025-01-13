@@ -1,0 +1,20 @@
+{
+    "replace": false,
+    "values": [
+
+      {"id": "minecraft:desert","required": false},
+      {"id": "terralith:lush_desert","required": false},
+      {"id": "terralith:desert_canyon","required": false}
+
+  
+      
+
+
+
+    
+
+
+      
+    ]
+  }
+  

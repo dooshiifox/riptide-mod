@@ -1,0 +1,1 @@
+give @s suspicious_sand[container_loot={loot_table:"scorched:archaeology/desert_pyramid"}]

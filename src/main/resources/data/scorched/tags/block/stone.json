@@ -1,0 +1,24 @@
+{
+  "replace": false,
+  "values": [
+   
+    {"id": "minecraft:stone","required": false},
+    {"id": "minecraft:gravel","required": false},
+    {"id": "minecraft:andesite","required": false},
+    {"id": "minecraft:granite","required": false},
+    {"id": "minecraft:diorite","required": false},
+    {"id": "minecraft:calcite","required": false},
+    {"id": "minecraft:blackstone","required": false},
+    {"id": "minecraft:tuff","required": false},
+    {"id": "minecraft:stone_slab","required": false},
+    {"id": "minecraft:granite_slab","required": false},
+    {"id": "minecraft:andesite_slab","required": false},
+    {"id": "minecraft:diorite_slab","required": false},
+    {"id": "minecraft:stone_stairs","required": false},
+    {"id": "minecraft:granite_stairs","required": false},
+    {"id": "minecraft:andesite_stairs","required": false},
+    {"id": "minecraft:diorite_stairs","required": false}
+
+    
+  ]
+}

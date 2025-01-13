@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:simple_random_selector",
+  "config": {
+    "features": [
+      {
+        "feature": "scorched:tree/oak_decaying",
+        "placement": []
+      },
+      {
+        "feature": "scorched:tree/oak_decaying",
+        "placement": []
+      },
+      {
+        "feature": "scorched:tree/oak_decaying_bending",
+        "placement": []
+      },
+      {
+        "feature": "scorched:tree/oak_decaying_2",
+        "placement": []
+      }
+    ]
+  }
+}

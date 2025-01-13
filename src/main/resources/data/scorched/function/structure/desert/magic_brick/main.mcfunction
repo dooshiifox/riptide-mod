@@ -1,0 +1,2 @@
+execute as @s[tag=!scorched_des_magic_lit_2] if score second scorched_clock matches 1 positioned ~ ~-.5 ~ run function scorched:structure/desert/magic_brick/box
+execute as @s[tag=scorched_des_magic_lit,tag=!scorched_des_magic_lit_2] align zyx positioned ~.5 ~.5 ~.5 run function scorched:structure/desert/magic_brick/lit

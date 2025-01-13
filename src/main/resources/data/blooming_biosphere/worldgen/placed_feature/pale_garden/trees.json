@@ -1,0 +1,67 @@
+{
+    "feature": {
+        "config": {
+            "features": [
+                {
+                    "chance": 0.1,
+                    "feature": "blooming_biosphere:pale_garden/trees/pale_oak_creaking"
+                },
+                {
+                    "chance": 0.15,
+                    "feature": "blooming_biosphere:pale_garden/trees/oak"
+                },
+                {
+                    "chance": 0.2,
+                    "feature": "blooming_biosphere:pale_garden/trees/thin"
+                },
+                {
+                    "chance": 0.08,
+                    "feature": "blooming_biosphere:pale_garden/trees/willow"
+                }
+            ],
+            "default": "blooming_biosphere:pale_garden/trees/pale_oak"
+        },
+        "type": "minecraft:random_selector"
+    },
+    "placement": [
+        {
+            "type": "minecraft:count",
+            "count": {
+                "type": "minecraft:weighted_list",
+                "distribution": [
+                    {
+                        "weight": 5,
+                        "data": 12
+                    },
+                    {
+                        "weight": 1,
+                        "data": 9
+                    }
+                ]
+            }
+        },
+        {
+            "type": "minecraft:in_square"
+        },
+        {
+            "type": "minecraft:surface_water_depth_filter",
+            "max_water_depth": 0
+        },
+        {
+            "type": "minecraft:heightmap",
+            "heightmap": "OCEAN_FLOOR"
+        },
+        {
+            "type": "minecraft:biome"
+        },
+        {
+            "type": "minecraft:block_predicate_filter",
+            "predicate": {
+                "type": "minecraft:would_survive",
+                "state": {
+                    "Name": "minecraft:pale_oak_sapling"
+                }
+            }
+        }
+    ]
+}

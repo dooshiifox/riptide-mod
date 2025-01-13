@@ -1,5 +1,6 @@
 {
   "values": [
-    "riptide:apply_step_height"
+    "riptide:apply_step_height",
+    "scorched:tick"
   ]
 }

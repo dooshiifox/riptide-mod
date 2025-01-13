@@ -1,0 +1,25 @@
+{
+    "name": "scorching:desert_well/shaft_medium",
+    "fallback": "minecraft:empty",
+    "elements": [
+      {
+        "weight": 1,
+        "element": {
+          "element_type": "minecraft:single_pool_element",
+          "projection": "terrain_matching",
+          "location": "scorched:desert_well/sussy_sand",
+          "processors": "scorched:sussy_sand"
+        }
+      },
+      {
+        "weight": 1,
+        "element": {
+          "element_type": "minecraft:empty_pool_element",
+          "projection": "terrain_matching",
+          "location": "minecraft:empty",
+          "processors": "minecraft:empty"
+        }
+      }
+    ]
+  }
+  

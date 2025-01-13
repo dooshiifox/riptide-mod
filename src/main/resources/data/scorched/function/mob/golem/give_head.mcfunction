@@ -1,0 +1,1 @@
+item replace entity @s armor.head with player_head[profile={id:[I;-1241975590,1387940554,-1078677217,-1010392075],properties:[{name:"textures",value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYTc5ZTk2ZDEzZmU2MzRmNTVkNDU1YzMwMzk4ZWE0ZTUwZTg5YWZlZGYzZmQ1ZWYzNzQ5MWI2M2VlNTlkN2E4MCJ9fX0="}]}] 1

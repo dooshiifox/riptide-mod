@@ -1,0 +1,7 @@
+{
+  "replace": false,
+  "values": [
+    "#terralith:all_terralith_biomes",
+    "#blooming_biosphere:is_overworld"
+  ]
+}

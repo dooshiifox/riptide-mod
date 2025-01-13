@@ -1,0 +1,1 @@
+give @s chest[container_loot={loot_table:"scorched:chest/badlands_temple"}]

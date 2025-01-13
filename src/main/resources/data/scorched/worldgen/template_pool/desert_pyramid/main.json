@@ -1,0 +1,15 @@
+{
+  "name": "scorching:desert_well/shaft_medium",
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "projection": "rigid",
+        "location": "scorched:desert_pyramid/top",
+        "processors": "scorched:desert_pyramid"
+      }
+    }
+  ]
+}

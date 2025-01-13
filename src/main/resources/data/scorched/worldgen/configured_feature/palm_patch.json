@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:random_patch",
+  "config": {
+    "tries": 1,
+    "xz_spread": 11,
+    "y_spread": 4,
+    "feature": {
+      "feature": "scorched:tree/palm_tree",
+      "placement": [
+        {
+          "type": "minecraft:block_predicate_filter",
+          "predicate": {
+            "type": "minecraft:matching_block_tag",
+            "offset": [
+              0,
+              -1,
+              0
+            ],
+            "tag": "scorched:sand_terrain"
+          }
+        }
+      ]
+    }
+  }
+}

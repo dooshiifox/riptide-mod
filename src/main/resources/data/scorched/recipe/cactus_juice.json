@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    "minecraft:sugar",
+    "minecraft:sugar",
+    "minecraft:sugar",
+    "minecraft:cactus",
+    "minecraft:cactus",
+    "minecraft:cactus",
+    "minecraft:potion"
+  ],
+  "result": {
+    "id": "minecraft:potion",
+    "count": 1,
+    "components": {
+      "minecraft:potion_contents": {
+        "custom_color": 11202240
+      },
+      "minecraft:item_name": "{\"text\":\"Cactus Juice\"}",
+      "minecraft:custom_data": {
+        "DesertCactusJuice": 1
+      }
+    }
+  }
+}

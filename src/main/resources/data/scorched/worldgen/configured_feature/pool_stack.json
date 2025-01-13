@@ -1,0 +1,92 @@
+{
+  "type": "minecraft:random_patch",
+  "config": {
+    "tries": 64,
+    "xz_spread": 0,
+    "y_spread": 0,
+    "feature": {
+      "feature": {
+        "type": "minecraft:simple_random_selector",
+        "config": {
+          "features": [
+            {
+              "feature": "scorched:grass_patch_big_0",
+              "placement": []
+            },
+            {
+              "feature": "scorched:grass_patch_spread",
+              "placement": [
+                {
+                  "type": "minecraft:block_predicate_filter",
+                  "predicate": {
+                    "type": "minecraft:matching_blocks",
+                    "offset": [
+                      0,
+                      -1,
+                      0
+                    ],
+                    "blocks": "minecraft:grass_block"
+                  }
+                }
+              ]
+            },
+            {
+              "feature": "scorched:palm_patch",
+              "placement": []
+            },
+            {
+              "feature": "scorched:oasis_flowers",
+              "placement": [
+                {
+                  "type": "minecraft:block_predicate_filter",
+                  "predicate": {
+                    "type": "minecraft:matching_blocks",
+                    "offset": [
+                      0,
+                      -1,
+                      0
+                    ],
+                    "blocks": "minecraft:grass_block"
+                  }
+                }
+              ]
+            },
+            {
+              "feature": "scorched:pool",
+              "placement": [
+                {
+                  "type": "minecraft:block_predicate_filter",
+                  "predicate": {
+                    "type": "minecraft:matching_blocks",
+                    "offset": [
+                      0,
+                      -1,
+                      0
+                    ],
+                    "blocks": "#scorched:sand_terrain"
+                  }
+                },
+                {
+                  "type": "minecraft:block_predicate_filter",
+                  "predicate": {
+                    "type": "minecraft:not",
+                    "predicate": {
+                      "type": "minecraft:matching_blocks",
+                      "offset": [
+                        0,
+                        0,
+                        0
+                      ],
+                      "blocks": "#minecraft:logs"
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "placement": []
+    }
+  }
+}

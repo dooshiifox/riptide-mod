@@ -1,0 +1,23 @@
+{
+  "replace": false,
+  "values": [
+
+    {"id": "minecraft:desert","required": false},
+    {"id": "terralith:lush_desert","required": false},
+    {"id": "terralith:desert_canyon","required": false},
+    {"id": "minecraft:badlands","required": false},
+    {"id": "minecraft:eroded_badlands","required": false},
+    {"id": "minecraft:wooded_badlands","required": false},
+    {"id": "terralith:bryce_canyon","required": false}
+
+
+    
+
+
+
+  
+
+
+    
+  ]
+}

@@ -1,0 +1,19 @@
+{
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:consume_item",
+        "conditions": {
+          "item": {
+            "items": [
+              "minecraft:potion"
+            ],
+            "nbt": "{DesertCactusJuice:1}"
+          }
+        }
+      }
+    },
+    "rewards": {
+      "function": "scorched:cactus_juice/consume"
+    }
+  }
+  

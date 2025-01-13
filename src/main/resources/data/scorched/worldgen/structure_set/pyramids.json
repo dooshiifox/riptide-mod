@@ -1,0 +1,18 @@
+{
+  "structures": [
+    {
+      "structure": "scorched:badlands_pyramid",
+      "weight": 1
+    },
+    {
+      "structure": "scorched:desert_pyramid",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "salt": 14357617,
+    "spacing": 38,
+    "separation": 19
+  }
+}

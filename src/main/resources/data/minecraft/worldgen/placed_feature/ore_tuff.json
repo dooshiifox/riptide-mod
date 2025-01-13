@@ -1,0 +1,13 @@
+{
+  "feature": "blooming_biosphere:caves/tuff",
+  "placement": [
+    {
+      "type": "minecraft:rarity_filter",
+      "chance": 4
+    },
+    {
+      "type": "minecraft:count_on_every_layer",
+      "count": 1
+    }
+  ]
+}

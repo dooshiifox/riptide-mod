@@ -1,0 +1,34 @@
+{
+    "name": "scorching:desert_well/shaft_medium",
+    "fallback": "minecraft:empty",
+    "elements": [
+      {
+        "weight": 1,
+        "element": {
+          "element_type": "minecraft:single_pool_element",
+          "projection": "rigid",
+          "location": "scorched:desert_well/shaft_medium_1",
+          "processors": "scorched:shaft_desert"
+        }
+      },
+      {
+        "weight": 1,
+        "element": {
+          "element_type": "minecraft:single_pool_element",
+          "projection": "rigid",
+          "location": "scorched:desert_well/shaft_medium_2",
+          "processors": "scorched:shaft_desert"
+        }
+      },
+      {
+        "weight": 1,
+        "element": {
+          "element_type": "minecraft:single_pool_element",
+          "projection": "rigid",
+          "location": "scorched:desert_well/shaft_medium_3",
+          "processors": "scorched:shaft_desert"
+        }
+      }
+    ]
+  }
+  

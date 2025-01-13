@@ -1,20 +1,62 @@
 - nicer environment
     - terrain mods
+        - https://modrinth.com/mod/terrablender
+        - https://modrinth.com/datapack/terralith
+            - https://modrinth.com/datapack/remove-terralith-intro-message
+        - https://modrinth.com/mod/biomes-o-plenty
+        - https://modrinth.com/datapack/tectonic
+        - {!} https://modrinth.com/datapack/nullscape
+        - https://modrinth.com/mod/wilder-wild
+        - https://modrinth.com/datapack/william-wythers-overhauled-overworld-(datapack)
+        - https://modrinth.com/datapack/scorched
+        - https://modrinth.com/datapack/blooming-biosphere
+        - https://modrinth.com/mod/oh-the-biomes-weve-gone
+        - {X} https://modrinth.com/datapack/epicterrain
+        - {X} https://modrinth.com/mod/big-globe
+        - {!} https://modrinth.com/user/YUNGNICKYOUNG
     - waterfall particles and sfx
+        - https://modrinth.com/mod/particular
     - rivers have rushing water and sound
     - birds live in forests
     - crickets chirp
     - wind sounds with moving leaves (sync up to shader)
+        - related: {!} https://modrinth.com/mod/passable-leaves
     - deserts and mesas have wind and sandstorms
+        - https://modrinth.com/mod/particle-rain
+    - {!} https://modrinth.com/mod/subtle-effects
+    - https://modrinth.com/mod/dynamicsurroundingsfabric
+    - {X} https://www.patreon.com/Haubna (Physics Mod Pro)
+        - https://pastebin.com/BHJv430d
+    - underwater improvements
+        - {!} https://modrinth.com/mod/hybrid-aquatic
+    - retextures & sounds
+        - https://modrinth.com/resourcepack/os-colorful-grasses
+        - https://modrinth.com/resourcepack/os-colorful-leaves
+        - {!} https://modrinth.com/mod/astrocraft
+        - https://modrinth.com/mod/immersivethunder
+    - bigger render distance
+        - {!} https://modrinth.com/mod/distanthorizons
+    - farmers delight/fabric seasons
+        - {!} https://modrinth.com/mod/farmers-delight-refabricated
+        - {!} https://modrinth.com/mod/fabric-seasons
+        - {!} https://modrinth.com/mod/fabric-seasons-extras
+        - {!} https://modrinth.com/mod/fabric-seasons-delight-compat
+        - {!} https://modrinth.com/mod/fabric-seasons-terralith-compat
+        - {!} https://modrinth.com/mod/fabric-seasons-byg-compat
+    - more exploration content
+        - {!} https://modrinth.com/mod/dungeon-now-loading
+        - {!} https://modrinth.com/mod/bosses-of-mass-destruction
+        - {!} https://modrinth.com/mod/irons-spells-n-spellbooks
 - make movement/exploration more fun
     - Riptide with an effect (DONE)
     - track players with a compass (DONE)
     - double-jump (DONE)
-    - remove elytra firework rockets
+    - remove elytra firework rockets (DONE)
         - enchantment to give a boost for elytra
             - like Create: Estrogen dash; one time use until touching ground
     - constant speed (DONE)
     - allow walking up one block (DONE)
+    - https://modrinth.com/datapack/catenary
 - more interesting progression
     - guidebook/quest tree
     - make ancient debris easier to find (DONE)
@@ -34,3 +76,22 @@
     - enchanting table gives slightly better enchants
     - use an emerald instead of lapis for even better enchants
         - as a consequence, a curse is now on the item. the curse is the preview enchant
+
+- Lore
+    - Bastions / Piglins
+    - Nether fortresses
+    - Ruined Nether portals
+    - Ancient cities / wardens
+    - ender dragon / endermen
+    - strongholds
+    - villages
+    - desert & jungle temples
+    - archaeology ruins
+    - monsters spawning
+    - trial chambers
+    - mineshafts
+    - trail ruins
+    - shipwrecks / buried treasure
+    - pillagers / mansions / pillager outposts
+    - swamps
+    - ocean monuments

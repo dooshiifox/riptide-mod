@@ -1,0 +1,78 @@
+{
+  "name": "scorching:desert_well/shaft_large",
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "projection": "rigid",
+        "location": "scorched:desert_well/cave1",
+        "processors": "scorched:well_cave"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "projection": "rigid",
+        "location": "scorched:desert_well/cave2",
+        "processors": "scorched:well_cave"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "projection": "rigid",
+        "location": "scorched:desert_well/cave3",
+        "processors": "scorched:well_cave"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "projection": "rigid",
+        "location": "scorched:desert_well/cave4",
+        "processors": "scorched:well_cave"
+      }
+    },
+    {
+      "weight": 3,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "projection": "rigid",
+        "location": "scorched:desert_well/cave5",
+        "processors": "scorched:well_cave"
+      }
+    },
+    {
+      "weight": 3,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "projection": "rigid",
+        "location": "scorched:desert_well/cave6",
+        "processors": "scorched:well_cave"
+      }
+    },
+    {
+      "weight": 3,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "projection": "rigid",
+        "location": "scorched:desert_well/cave7",
+        "processors": "scorched:well_cave"
+      }
+    },
+    {
+      "weight": 3,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "projection": "rigid",
+        "location": "scorched:desert_well/cave8",
+        "processors": "scorched:well_cave"
+      }
+    }
+  ]
+}

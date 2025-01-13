@@ -1,0 +1,21 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:player_interacted_with_entity",
+      "conditions": {
+        "item": {
+          "items": [
+            "minecraft:emerald"
+          ],
+          "components": {
+            "minecraft:custom_data": "{ScorchedGem:2}"
+            
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "scorched:action/place_piece"
+  }
+}

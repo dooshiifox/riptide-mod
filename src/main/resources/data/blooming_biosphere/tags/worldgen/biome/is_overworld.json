@@ -1,0 +1,13 @@
+{
+    "replace": false,
+    "values": [
+      "blooming_biosphere:autumnal_forest",
+      "blooming_biosphere:chaparral",
+      "blooming_biosphere:marsh",
+      "blooming_biosphere:oak_woodland",
+      "blooming_biosphere:rainforest",
+      "blooming_biosphere:snowy_cherry_grove",
+      "blooming_biosphere:tidepools"
+    ]
+  }
+  

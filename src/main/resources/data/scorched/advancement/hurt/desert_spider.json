@@ -1,0 +1,18 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:entity_hurt_player",
+      "conditions": {
+        "damage": {
+          "source_entity": {
+            "type": "minecraft:spider",
+            "nbt": "{Tags:[\"scorched_desert_spider\"]}"
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "scorched:mob/desert_spider/poison"
+  }
+}

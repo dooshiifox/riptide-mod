@@ -1,0 +1,6 @@
+execute if block ~ ~ ~ sand run particle block{block_state:"sand"} ~ ~ ~ 0 0 0 0 1 force @a[distance=..24]
+execute if block ~ ~ ~ red_sand run particle block{block_state:"red_sand"} ~ ~ ~ 0 0 0 0 1 force @a[distance=..24]
+execute if block ~ ~ ~ dirt run particle block{block_state:"dirt"} ~ ~ ~ 0 0 0 0 1 force @a[distance=..24]
+execute if block ~ ~ ~ grass_block run particle block{block_state:"grass_block"} ~ ~ ~ 0 0 0 0 1 force @a[distance=..24]
+execute if block ~ ~ ~ gravel run particle block{block_state:"gravel"} ~ ~ ~ 0 0 0 0 1 force @a[distance=..24]
+execute if block ~ ~ ~ stone run particle block{block_state:"stone"} ~ ~ ~ 0 0 0 0 1 force @a[distance=..24]

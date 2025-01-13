@@ -13,6 +13,8 @@
     "ItemEnchantmentsComponentBuilderMixin",
     "ItemsMixin",
     "LivingEntityMixin",
+    "MultiNoiseBiomeSourceMixin",
+    "PlacedFeatureIndexerMixin",
     "SingleEnchantmentProviderMixin",
     "StatusEffectInstanceMixin",
     "ToolMaterialMixin",

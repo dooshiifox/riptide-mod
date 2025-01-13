@@ -1,0 +1,14 @@
+{
+  "name": "scorched:desert_well/lichen",
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:feature_pool_element",
+        "projection": "rigid",
+        "feature": "minecraft:glow_lichen"
+      }
+    }
+  ]
+}

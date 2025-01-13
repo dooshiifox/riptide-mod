@@ -1,0 +1,31 @@
+{
+  "type": "minecraft:random_patch",
+  "config": {
+    "tries": 10,
+    "xz_spread": 12,
+    "y_spread": 2,
+    "feature": {
+      "feature": {
+        "type": "minecraft:disk",
+        "config": {
+          "state_provider": {
+            "fallback": {
+              "type": "minecraft:simple_state_provider",
+              "state": {
+                "Name": "minecraft:grass_block"
+              }
+            },
+            "rules": []
+          },
+          "target": {
+            "type": "minecraft:matching_block_tag",
+            "tag": "scorched:oasis_grass_can_replace"
+          },
+          "radius": 3,
+          "half_height": 2
+        }
+      },
+      "placement": []
+    }
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "feature": {
+    "config": {
+      "features": [
+        {
+          "chance": 0.8,
+          "feature": {
+            "feature": "blooming_biosphere:pale_garden/trees/fallen_oak",
+            "placement": []
+          }
+        }
+      ],
+      "default": {
+        "feature": "blooming_biosphere:pale_garden/trees/fallen_pale_oak",
+        "placement": []
+      }
+    },
+    "type": "minecraft:random_selector"
+  },
+  "placement": [
+    {
+      "type": "minecraft:rarity_filter",
+      "chance": 2
+    },
+    {
+      "type": "minecraft:in_square"
+    },
+    {
+      "type": "minecraft:surface_water_depth_filter",
+      "max_water_depth": 0
+    },
+    {
+      "type": "minecraft:heightmap",
+      "heightmap": "OCEAN_FLOOR"
+    },
+    {
+      "type": "minecraft:biome"
+    },
+    {
+      "type": "minecraft:block_predicate_filter",
+      "predicate": {
+        "type": "minecraft:would_survive",
+        "state": {
+          "Name": "minecraft:oak_sapling"
+        }
+      }
+    }
+  ]
+}

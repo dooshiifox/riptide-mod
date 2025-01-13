@@ -1,0 +1,19 @@
+{
+    "structures": [
+      {
+        "structure": "scorched:desert_well",
+        "weight": 1
+      },
+      {
+        "structure": "scorched:badlands_well",
+        "weight": 1
+      }
+    ],
+    "placement": {
+      "type": "minecraft:random_spread",
+      "salt": 1251342389,
+      "spacing": 16,
+      "separation": 8
+    }
+  }
+  

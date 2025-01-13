@@ -1,0 +1,25 @@
+{
+    "name": "scorching:desert_well/shaft_medium",
+    "fallback": "scorched:sandcrab_end",
+    "elements": [
+      {
+        "weight": 1,
+        "element": {
+          "element_type": "minecraft:single_pool_element",
+          "projection": "terrain_matching",
+          "location": "scorched:sandcrab/path",
+          "processors": "minecraft:empty"
+        }
+      },
+      {
+        "weight": 1,
+        "element": {
+          "element_type": "minecraft:single_pool_element",
+          "projection": "terrain_matching",
+          "location": "scorched:sandcrab/path2",
+          "processors": "minecraft:empty"
+        }
+      }
+    ]
+  }
+  
