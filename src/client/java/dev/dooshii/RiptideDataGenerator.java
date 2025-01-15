@@ -15,6 +15,7 @@ import net.minecraft.client.render.item.model.RangeDispatchItemModel;
 import net.minecraft.data.recipe.RecipeExporter;
 import net.minecraft.data.recipe.RecipeGenerator;
 import net.minecraft.data.recipe.ShapelessRecipeJsonBuilder;
+import net.minecraft.entity.EntityType;
 import net.minecraft.item.Item;
 import net.minecraft.item.Items;
 import net.minecraft.recipe.book.RecipeCategory;
@@ -35,6 +36,7 @@ public class RiptideDataGenerator implements DataGeneratorEntrypoint {
         pack.addProvider(RiptideRecipeProvider::new);
         pack.addProvider(RiptideItemTagProvider::new);
         pack.addProvider(RiptideBlockTagProvider::new);
+        pack.addProvider(RiptideEntityTagProvider::new);
     }
 }
 
@@ -107,5 +109,17 @@ class RiptideBlockTagProvider extends FabricTagProvider<Block> {
     protected void configure(RegistryWrapper.WrapperLookup lookup) {
         getOrCreateTagBuilder(TagKey.of(RegistryKeys.BLOCK, Identifier.ofVanilla("mineable/hoe")))
                 .add(ModBlocks.AUTUMN_LEAVES, ModBlocks.MAPLE_LEAVES, ModBlocks.GOLDEN_LEAVES);
+    }
+}
+
+class RiptideEntityTagProvider extends FabricTagProvider<EntityType<?>> {
+    public RiptideEntityTagProvider(FabricDataOutput output, CompletableFuture<RegistryWrapper.WrapperLookup> registriesFuture) {
+        super(output, RegistryKeys.ENTITY_TYPE, registriesFuture);
+    }
+
+    @Override
+    protected void configure(RegistryWrapper.WrapperLookup lookup) {
+        getOrCreateTagBuilder(ModTags.LEAVES_WALKABLE)
+                .add(EntityType.CAT, EntityType.OCELOT, EntityType.PARROT, EntityType.FOX);
     }
 }

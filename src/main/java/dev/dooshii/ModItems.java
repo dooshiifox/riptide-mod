@@ -31,7 +31,7 @@ public class ModItems {
             new Potion(
                     "damp",
                     new StatusEffectInstance(
-                            Registries.STATUS_EFFECT.getEntry(Riptide.DAMP_EFFECT),
+                            Registries.STATUS_EFFECT.getEntry(ModEffects.DAMP_EFFECT),
                             // 3:30
                             4200,
                             0)));
@@ -41,7 +41,7 @@ public class ModItems {
             new Potion(
                     "long_damp",
                     new StatusEffectInstance(
-                            Registries.STATUS_EFFECT.getEntry(Riptide.DAMP_EFFECT),
+                            Registries.STATUS_EFFECT.getEntry(ModEffects.DAMP_EFFECT),
                             // 8:00
                             9600,
                             0)));

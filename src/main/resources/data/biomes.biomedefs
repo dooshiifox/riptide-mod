@@ -1457,19 +1457,19 @@ Cold, Wet, Far Inland, Extremely Flat, Mid: Cloud Forest
 Cold, Wet, Far Inland, Extremely Flat, High: Cloud Forest
 Cold, Wet, Far Inland, Extremely Flat, Peak: Cloud Forest
 Cold, Humid, Coastal, Extreme Mountains, Valley: River
-Cold, Humid, Coastal, Extreme Mountains, Low: Stony Shore
-Cold, Humid, Coastal, Extreme Mountains, Mid: Stony Shore
-Cold, Humid, Coastal, Extreme Mountains, High: Stony Shore
-Cold, Humid, Coastal, Extreme Mountains, Peak: Stony Shore
+Cold, Humid, Coastal, Extreme Mountains, Low: Snowy Beach
+Cold, Humid, Coastal, Extreme Mountains, Mid: Snowy Beach
+Cold, Humid, Coastal, Extreme Mountains, High: Snowy Beach
+Cold, Humid, Coastal, Extreme Mountains, Peak: Snowy Beach
 Cold, Humid, Coastal, Mountains, Valley: River
 Cold, Humid, Coastal, Mountains, Low: Stony Shore
-Cold, Humid, Coastal, Mountains, Mid: Stony Shore
-Cold, Humid, Coastal, Mountains, High: Stony Shore
-Cold, Humid, Coastal, Mountains, Peak: Stony Shore
+Cold, Humid, Coastal, Mountains, Mid: Snowy Beach
+Cold, Humid, Coastal, Mountains, High: Snowy Beach
+Cold, Humid, Coastal, Mountains, Peak: Snowy Beach
 Cold, Humid, Coastal, Hills, Valley: River
 Cold, Humid, Coastal, Hills, Low: Gravel Beach & Beach
-Cold, Humid, Coastal, Hills, Mid Ascending: Stony Shore
-Cold, Humid, Coastal, Hills, Mid Descending: Gravel Beach & Beach
+Cold, Humid, Coastal, Hills, Mid Ascending: Snowy Beach
+Cold, Humid, Coastal, Hills, Mid Descending: Gravel Beach & Snowy Beach
 Cold, Humid, Coastal, Hills, High: Wintry Forest
 Cold, Humid, Coastal, Hills, Peak: Wintry Forest
 Cold, Humid, Coastal, Slopes, Valley: River

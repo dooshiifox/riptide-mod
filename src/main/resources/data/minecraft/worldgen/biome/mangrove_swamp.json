@@ -192,8 +192,6 @@
       "minecraft:glow_lichen",
       "blooming_biosphere:mangrove_swamp/trees",
       "blooming_biosphere:mangrove_swamp/flowers",
-      "minecraft:patch_grass_normal",
-      "minecraft:patch_dead_bush",
       "wythers:vegetation/local/patch/large_ferns_dense_forests",
       "wythers:vegetation/local/trees/mangrove_swamp_jungle",
       "wythers:vegetation/local/trees/mangrove_swamp_bayou",
@@ -203,6 +201,8 @@
       "wythers:vegetation/local/trees/mangrove_swamp_mangroves",
       "wythers:vegetation/local/patch/elephant_grass",
       "wythers:vegetation/local/patch/grass_standard",
+      "minecraft:patch_grass_normal",
+      "minecraft:patch_dead_bush",
       "minecraft:patch_waterlily",
       "minecraft:seagrass_swamp"
     ],

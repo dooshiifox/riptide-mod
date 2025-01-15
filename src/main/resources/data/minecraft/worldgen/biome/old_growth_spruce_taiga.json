@@ -92,11 +92,11 @@
         ],
         [
             "minecraft:glow_lichen",
-            "minecraft:patch_dead_bush",
             "wythers:vegetation/local/patch/large_ferns_dense_forests",
             "wythers:vegetation/local/trees/ogt_giant_redwood_woods",
             "wythers:vegetation/local/trees/old_growth_spruce_taiga",
             "minecraft:patch_grass_taiga",
+            "minecraft:patch_dead_bush",
             "minecraft:brown_mushroom_taiga",
             "minecraft:red_mushroom_taiga",
             "minecraft:brown_mushroom_normal",

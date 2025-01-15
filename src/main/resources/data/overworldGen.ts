@@ -514,6 +514,77 @@ class OverworldGenerator {
             }
         }
     }
+
+    optimiseFor(
+        key:
+            | "weirdness"
+            | "continentalness"
+            | "erosion"
+            | "temperature"
+            | "humidity"
+            | "depth"
+    ) {
+        const cmpKeys = [
+            "weirdness",
+            "continentalness",
+            "erosion",
+            "temperature",
+            "humidity",
+            "depth"
+        ].filter((x) => x !== key);
+
+        let i = 0;
+        while (i < this.biomes.length) {
+            const biome = this.biomes[i];
+            // Find all biomes with the same everything-but-weirdness
+            const similarBiomes = [i];
+            for (let j = i + 1; j < this.biomes.length; j++) {
+                const maybeSimilarBiome = this.biomes[j];
+                if (
+                    cmpKeys.every((k) =>
+                        paramsEq(biome[k], maybeSimilarBiome[k])
+                    ) &&
+                    biome.biome === maybeSimilarBiome.biome
+                ) {
+                    similarBiomes.push(j);
+                }
+            }
+
+            // Sort ascending
+            similarBiomes.sort(
+                (a, b) => this.biomes[a][key][0] - this.biomes[b][key][0]
+            );
+            const createdBiome = this.biomes[similarBiomes.shift()];
+            const removeIndices = [];
+            while (similarBiomes.length) {
+                const next = similarBiomes.findIndex(
+                    (s) => createdBiome[key][1] === this.biomes[s][key][0]
+                );
+                if (next === -1) break;
+                // Merge
+                createdBiome[key][1] = this.biomes[similarBiomes[next]][key][1];
+                removeIndices.push(similarBiomes[next]);
+                similarBiomes.splice(next, 1);
+            }
+            removeIndices.forEach((index) => this.biomes.splice(index, 1));
+            this.biomes[i] = createdBiome;
+            i++;
+        }
+    }
+
+    optimise() {
+        this.optimiseFor("weirdness");
+        // Take a long time and barely reduce it by anything
+        // this.optimiseFor("erosion");
+        // this.optimiseFor("continentalness");
+        // this.optimiseFor("humidity");
+        // this.optimiseFor("temperature");
+        // this.optimiseFor("depth");
+    }
+}
+
+function paramsEq(a: [number, number], b: [number, number]) {
+    return a[0] === b[0] && a[1] === b[1];
 }
 
 export function overworldGenerator(filenames: Array<string>) {
@@ -629,14 +700,14 @@ export function biomeDefsParser(file: string) {
             ([k]) => k.toLowerCase() === biomeNormal
         );
         if (!findBiomeNormalId) {
-            throw new Error(`Cannot find biome: ${biomeNormal}\n\t${line}`)
+            throw new Error(`Cannot find biome: ${biomeNormal}\n\t${line}`);
         }
         const biomeNormalId = findBiomeNormalId[1];
         const findBiomeVariantId = Object.entries(BIOME).find(
             ([k]) => k.toLowerCase() === biomeVariant
         );
         if (!findBiomeVariantId) {
-            throw new Error(`Cannot find biome: ${biomeVariant}\n\t${line}`)
+            throw new Error(`Cannot find biome: ${biomeVariant}\n\t${line}`);
         }
         const biomeVariantId = findBiomeVariantId[1];
 
@@ -670,6 +741,8 @@ export function biomeDefsParser(file: string) {
             );
         }
     }
+
+    gen.optimise();
 
     const addedBiomes = new Set(gen.biomes.map((b) => b.biome));
     const knownBiomes = new Set(Object.values(BIOME));

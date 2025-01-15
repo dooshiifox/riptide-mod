@@ -1,6 +1,6 @@
 package dev.dooshii.entity.effect;
 
-import dev.dooshii.Riptide;
+import dev.dooshii.ModEffects;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.effect.StatusEffect;
 import net.minecraft.entity.effect.StatusEffectCategory;
@@ -18,7 +18,7 @@ public class DampStatusEffect extends StatusEffect {
     }
 
     public static boolean canUseRiptide(PlayerEntity player) {
-        return player.hasStatusEffect(Registries.STATUS_EFFECT.getEntry(Riptide.DAMP_EFFECT)) || player.isTouchingWaterOrRain();
+        return player.hasStatusEffect(Registries.STATUS_EFFECT.getEntry(ModEffects.DAMP_EFFECT)) || player.isTouchingWaterOrRain();
     }
 
     public static Modifier getModifier(LivingEntity entity) {

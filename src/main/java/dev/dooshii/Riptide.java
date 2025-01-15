@@ -2,11 +2,7 @@ package dev.dooshii;
 
 import dev.dooshii.enchantment.DisableMending;
 import dev.dooshii.enchantment.ExtraEntityAttributes;
-import dev.dooshii.entity.effect.DampStatusEffect;
 import net.fabricmc.api.ModInitializer;
-import net.minecraft.entity.effect.StatusEffect;
-import net.minecraft.registry.Registries;
-import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -19,16 +15,14 @@ public class Riptide implements ModInitializer {
     // That way, it's clear which mod wrote info, warnings, and errors.
     public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
 
-    public static final StatusEffect DAMP_EFFECT;
-
-    static {
-        DAMP_EFFECT = Registry.register(Registries.STATUS_EFFECT, Riptide.id("damp"), new DampStatusEffect());
-    }
+//    public static final OwoNetChannel NET_CHANNEL = OwoNetChannel.create(Riptide.id("main")).addEndecs(NetworkEndec::registerEndecs);
 
     @Override
     public void onInitialize() {
         ModBlocks.onInitialize();
         ModItems.onInitialize();
+        ModEffects.onInitialize();
+        ModTags.onInitialize();
         ModComponents.onInitialize();
 
         ExtraEntityAttributes.onInitialize();
