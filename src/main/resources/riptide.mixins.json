@@ -3,6 +3,7 @@
   "package": "dev.dooshii.mixin",
   "compatibilityLevel": "JAVA_21",
   "mixins": [
+    "AbstractBlockStateMixin",
     "AnvilScreenHandlerMixin",
     "EnchantmentHelperMixin",
     "EnchantRandomlyLootFunctionMixin",

@@ -1,0 +1,7 @@
+[
+  {
+    "function": "minecraft:enchant_with_levels",
+    "levels": 50,
+    "options": "#minecraft:on_random_loot"
+  }
+]

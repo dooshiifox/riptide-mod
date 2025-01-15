@@ -20,7 +20,7 @@ public class DisableMending {
     public static final List<RegistryEntry.Reference<Enchantment>> ENCHANTMENTS = new ArrayList<>();
     public static ItemStack cachedApplyStack = null;
 
-    public static void init() {
+    public static void onInitialize() {
         ServerLifecycleEvents.SERVER_STARTED.register(new CacheEnchantmentRegistryEvent());
     }
 

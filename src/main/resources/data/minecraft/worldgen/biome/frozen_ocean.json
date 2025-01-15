@@ -94,6 +94,7 @@
       "terralith:snowy/layer/third",
       "terralith:snowy/fix_snow",
       "terralith:snowy/fix_grass",
+      "wythers:terrain/local/snowy_slopes",
       "wythers:terrain/local/crack_ice",
       "wythers:terrain/local/pack_ice_snow"
     ]

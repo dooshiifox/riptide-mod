@@ -27,12 +27,13 @@ public class Riptide implements ModInitializer {
 
     @Override
     public void onInitialize() {
+        ModBlocks.onInitialize();
         ModItems.onInitialize();
-        ModComponents.initialize();
+        ModComponents.onInitialize();
 
-        ExtraEntityAttributes.init();
+        ExtraEntityAttributes.onInitialize();
 
-        DisableMending.init();
+        DisableMending.onInitialize();
     }
 
     public static Identifier id(String id) {

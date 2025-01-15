@@ -29,7 +29,7 @@
     "foliage_provider": {
       "type": "minecraft:simple_state_provider",
       "state": {
-        "Name": "minecraft:dark_oak_leaves",
+        "Name": "riptide:autumn_leaves",
         "Properties": {
           "distance": "7",
           "persistent": "false",
@@ -58,7 +58,7 @@
         "block_provider": {
           "type": "minecraft:simple_state_provider",
           "state": {
-            "Name": "minecraft:dark_oak_leaves",
+            "Name": "riptide:autumn_leaves",
             "Properties": {
               "distance": "7",
               "persistent": "false",

@@ -1,16 +1,15 @@
 - nicer environment
     - terrain mods
-        - https://modrinth.com/mod/terrablender
+        - {X?} https://modrinth.com/mod/terrablender
         - https://modrinth.com/datapack/terralith
-            - https://modrinth.com/datapack/remove-terralith-intro-message
         - https://modrinth.com/mod/biomes-o-plenty
         - https://modrinth.com/datapack/tectonic
-        - {!} https://modrinth.com/datapack/nullscape
+        - https://modrinth.com/datapack/nullscape
         - https://modrinth.com/mod/wilder-wild
         - https://modrinth.com/datapack/william-wythers-overhauled-overworld-(datapack)
         - https://modrinth.com/datapack/scorched
         - https://modrinth.com/datapack/blooming-biosphere
-        - https://modrinth.com/mod/oh-the-biomes-weve-gone
+        - {!} https://modrinth.com/mod/oh-the-biomes-weve-gone
         - {X} https://modrinth.com/datapack/epicterrain
         - {X} https://modrinth.com/mod/big-globe
         - {!} https://modrinth.com/user/YUNGNICKYOUNG
@@ -23,7 +22,7 @@
         - related: {!} https://modrinth.com/mod/passable-leaves
     - deserts and mesas have wind and sandstorms
         - https://modrinth.com/mod/particle-rain
-    - {!} https://modrinth.com/mod/subtle-effects
+    - https://modrinth.com/mod/subtle-effects
     - https://modrinth.com/mod/dynamicsurroundingsfabric
     - {X} https://www.patreon.com/Haubna (Physics Mod Pro)
         - https://pastebin.com/BHJv430d
@@ -73,6 +72,7 @@
     - make villagers only sell low-level books
     - make soul speed and swift sneak easier to find
         - to compensate for the fact we remove mending
+    - add a way to get the new enchantments
     - enchanting table gives slightly better enchants
     - use an emerald instead of lapis for even better enchants
         - as a consequence, a curse is now on the item. the curse is the preview enchant
@@ -86,12 +86,49 @@
     - strongholds
     - villages
     - desert & jungle temples
-    - archaeology ruins
     - monsters spawning
     - trial chambers
     - mineshafts
     - trail ruins
     - shipwrecks / buried treasure
     - pillagers / mansions / pillager outposts
-    - swamps
+    - swamp huts
     - ocean monuments
+
+    - History
+        - kingdom established
+            - pirates (Shipwrecks & Buried Treasure)
+        - first nether portal created
+            - first adventure is mostly harmless by an army of soldiers
+            - known to be evil inside but also resources
+        - nether fortresses discovered
+        - many nether portals created across the lands (Ruined Portals)
+            - monsters start spawning around the world
+        - first case of piglining discovered (Piglins & Bastions)
+            - an infection that makes one hate sunlight and love gold
+            - slowly turns one into a piglin
+            - cause unknown
+        - trial chambers created to train armies (Trial Chambers)
+        - nether portals start seeping outwards
+        - enchanting discovered
+        - many cases of piglining
+            - portals destroyed
+            - nether entry forbidden by royal decree
+        - wither summoned by accident
+            - destruction ensues
+        - royal decree to evacuate underground (Trail Ruins, Ancient Cities)
+            - some villages are allowed to stay above ground for food in exchange for resources (Mineshafts, Villages)
+        - mobs start attacking underground
+        - wardens created to fight them off (Wardens)
+        - first case of warden attacking village
+        - skulk starts spreading like an infection
+        - end portal discovered, strongholds built (Strongholds)
+            - order to leave to the end issued to escape the overworld and nether
+        - first known sighting of enderman (Enderman & Ender Dragon)
+            - thought to be the escapers due to piglining being a thing
+        - due to irrepairable danger caused by magic and knowledge, all knowledge and magic is to be destroyed
+            - witches banished (Swamp Huts)
+        - ... many millenia later...
+        - some villagers discover old knowledge and attempt to use it
+            - warned and then banished by other villagers
+            - become their own faction and seek revenge (Mansions & Pillagers & Pillager Outposts)

@@ -4,6 +4,8 @@ import {
     overworldParser
 } from "./overworldGen";
 import { readFile, readJson, recursiveReadDir, snakeToPascal } from "./util";
+import { PNG } from "pngjs";
+import * as fs from "node:fs";
 
 function translationGenerator(filenames: Array<string>) {
     const obj = {};
@@ -16,16 +18,120 @@ function translationGenerator(filenames: Array<string>) {
     console.log(JSON.stringify(obj, null, 4));
 }
 
+function decimalToRgb(dec: number): { r: number; g: number; b: number } {
+    const r = dec >> 16;
+    const g = (dec & 0x00ff00) >> 8;
+    const b = dec & 255;
+    return { r, g, b };
+}
+function rgbToHex(rgb: { r: number; g: number; b: number }) {
+    const fmt = (s: number) => s.toString(16).padStart(2, "0");
+    return `#${fmt(rgb.r)}${fmt(rgb.g)}${fmt(rgb.b)}`;
+}
+
+function clamp(num: number, min: number, max: number) {
+    return Math.min(Math.max(num, min), max);
+}
+
+async function getDecimalColorAt(
+    file: string,
+    temperature: number,
+    downfall: number
+) {
+    const temp = clamp(temperature, 0, 1);
+    const down = clamp(downfall, 0, 1);
+    const i = Math.floor((1.0 - temp) * 255.0);
+    const j = Math.floor((1.0 - down * temp) * 255.0);
+    const k = (j << 8) | i;
+
+    return new Promise<number>((res) => {
+        fs.createReadStream(file)
+            .pipe(new PNG())
+            .on("parsed", function () {
+                if (k * 4 >= this.data.length) {
+                    res(-65281);
+                } else {
+                    res(
+                        (this.data[k * 4] << 16) +
+                            (this.data[k * 4 + 1] << 8) +
+                            this.data[k * 4 + 2]
+                    );
+                }
+            });
+    });
+}
+
 async function main() {
-    const biomes: { filename: string; features: string[][] }[] = [
+    const biomes = [
         ...(await recursiveReadDir("terralith/worldgen/biome")),
         // ...(await recursiveReadDir("nullscape/worldgen/biome")),
         ...(await recursiveReadDir("minecraft/worldgen/biome")),
         ...(await recursiveReadDir("blooming_biosphere/worldgen/biome"))
     ].map(({ filename, content }) => ({
         filename,
-        features: content.features
+        content: {
+            has_precipitation: (content.has_precipitation as boolean) || false,
+            temperature: content.temperature as number,
+            temperature_modifier:
+                (content.temperature_modifier as "frozen" | "none") || "none",
+            downfall: content.downfall as number,
+            effects: {
+                fog_color: decimalToRgb(content.effects.fog_color || 12638463),
+                sky_color: decimalToRgb(content.effects.sky_color),
+                water_color: decimalToRgb(
+                    content.effects.water_color || 4159204
+                ),
+                water_fog_color: decimalToRgb(
+                    content.effects.water_fog_color || 329011
+                ),
+                async foliage_color() {
+                    return decimalToRgb(
+                        content.effects.foliage_color ||
+                            (await getDecimalColorAt(
+                                "./foliage.png",
+                                content.temperature,
+                                content.downfall
+                            ))
+                    );
+                },
+                async grass_color() {
+                    if (content.effects.grass_color_modifier === "swamp") {
+                        return decimalToRgb(5011004);
+                    }
+                    let dec =
+                        content.effects.grass_color ||
+                        (await getDecimalColorAt(
+                            "./grass.png",
+                            content.temperature,
+                            content.downfall
+                        ));
+                    if (
+                        content.effects.grass_color_modifier === "dark_forest"
+                    ) {
+                        dec = ((dec & 16711422) + 2634762) >> 1;
+                    }
+                    return decimalToRgb(dec);
+                },
+                grass_color_modifier:
+                    (content.effects.grass_color_modifier as
+                        | "none"
+                        | "dark_forest"
+                        | "swamp") || "none"
+            }
+        },
+        features: content.features as string[][]
     }));
+
+    // for (const biome of biomes) {
+    //     const rgb = await biome.content.effects.foliage_color();
+    //     const mod = biome.filename.split("/")[0];
+    //     const biomeName = biome.filename.split("/").at(-1).replace(".json", "");
+    //     console.log(
+    //         `\x1b[38;2;${rgb.r};${rgb.g};${rgb.b}m ${rgbToHex(
+    //             rgb
+    //         )} ${mod}:${biomeName}`
+    //     );
+    // }
 
     // translationGenerator(biomes.map((b) => b.filename));
     // overworldGenerator(biomes.map((b) => b.filename));

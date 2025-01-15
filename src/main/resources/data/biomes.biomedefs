@@ -888,8 +888,7 @@ Cold, Arid, Coastal, Very Flat, Peak: Windswept Gravelly Hills
 Cold, Arid, Coastal, Extremely Flat, Valley: River
 Cold, Arid, Coastal, Extremely Flat, Low: Beach
 Cold, Arid, Coastal, Extremely Flat, Mid: Beach & Shrubland
-Cold, Arid, Coastal, Extremely Flat, High Ascending: Plains & Shrubland
-Cold, Arid, Coastal, Extremely Flat, High Descending: Orchid Swamp
+Cold, Arid, Coastal, Extremely Flat, High: Plains & Shrubland
 Cold, Arid, Coastal, Extremely Flat, Peak: Orchid Swamp
 Cold, Arid, Near Inland, Extreme Mountains, Valley: River
 Cold, Arid, Near Inland, Extreme Mountains, Low: Temperate Highlands
@@ -979,11 +978,11 @@ Cold, Arid, Far Inland, Hills, Low: Meadow & Cherry Grove
 Cold, Arid, Far Inland, Hills, Mid: Meadow & Cherry Grove
 Cold, Arid, Far Inland, Hills, High: Meadow & Cherry Grove
 Cold, Arid, Far Inland, Hills, Peak: Meadow & Cherry Grove
-Cold, Arid, Far Inland, Slopes, Valley: Orchid Swamp
-Cold, Arid, Far Inland, Slopes, Low: Orchid Swamp
-Cold, Arid, Far Inland, Slopes, Mid: Orchid Swamp
-Cold, Arid, Far Inland, Slopes, High: Orchid Swamp
-Cold, Arid, Far Inland, Slopes, Peak: Orchid Swamp
+Cold, Arid, Far Inland, Slopes, Valley: River
+Cold, Arid, Far Inland, Slopes, Low: Yosemite Lowlands
+Cold, Arid, Far Inland, Slopes, Mid: Yosemite Cliffs
+Cold, Arid, Far Inland, Slopes, High: Yosemite Cliffs
+Cold, Arid, Far Inland, Slopes, Peak: Yosemite Cliffs
 Cold, Arid, Far Inland, Flat, Valley: Steppe
 Cold, Arid, Far Inland, Flat, Low: Steppe
 Cold, Arid, Far Inland, Flat, Mid: Steppe
@@ -1033,8 +1032,7 @@ Cold, Dry, Coastal, Very Flat, Peak: Windswept Gravelly Hills
 Cold, Dry, Coastal, Extremely Flat, Valley: River
 Cold, Dry, Coastal, Extremely Flat, Low: Beach
 Cold, Dry, Coastal, Extremely Flat, Mid: Beach & Plains
-Cold, Dry, Coastal, Extremely Flat, High Ascending: Plains
-Cold, Dry, Coastal, Extremely Flat, High Descending: Orchid Swamp
+Cold, Dry, Coastal, Extremely Flat, High: Orchid Swamp
 Cold, Dry, Coastal, Extremely Flat, Peak: Orchid Swamp
 Cold, Dry, Near Inland, Extreme Mountains, Valley: River
 Cold, Dry, Near Inland, Extreme Mountains, Low: Shield
@@ -1101,15 +1099,15 @@ Cold, Dry, Mid Inland, Slopes, Mid: Shield
 Cold, Dry, Mid Inland, Slopes, High: Shield
 Cold, Dry, Mid Inland, Slopes, Peak: Shield
 Cold, Dry, Mid Inland, Flat, Valley: River
-Cold, Dry, Mid Inland, Flat, Low: Steppe & Moonlight Valley
-Cold, Dry, Mid Inland, Flat, Mid: Steppe & Moonlight Valley
-Cold, Dry, Mid Inland, Flat, High: Steppe & Moonlight Valley
-Cold, Dry, Mid Inland, Flat, Peak: Steppe & Moonlight Valley
+Cold, Dry, Mid Inland, Flat, Low: Steppe
+Cold, Dry, Mid Inland, Flat, Mid: Steppe
+Cold, Dry, Mid Inland, Flat, High: Steppe
+Cold, Dry, Mid Inland, Flat, Peak: Steppe
 Cold, Dry, Mid Inland, Very Flat, Valley: River
-Cold, Dry, Mid Inland, Very Flat, Low: Moonlight Valley
-Cold, Dry, Mid Inland, Very Flat, Mid: Moonlight Valley
-Cold, Dry, Mid Inland, Very Flat, High: Moonlight Valley
-Cold, Dry, Mid Inland, Very Flat, Peak: Moonlight Valley
+Cold, Dry, Mid Inland, Very Flat, Low: Cloud Forest
+Cold, Dry, Mid Inland, Very Flat, Mid: Cloud Forest
+Cold, Dry, Mid Inland, Very Flat, High: Cloud Forest
+Cold, Dry, Mid Inland, Very Flat, Peak: Cloud Forest
 Cold, Dry, Mid Inland, Extremely Flat, Valley: River
 Cold, Dry, Mid Inland, Extremely Flat, Low: Windswept Spires
 Cold, Dry, Mid Inland, Extremely Flat, Mid: Windswept Spires
@@ -1133,21 +1131,21 @@ Cold, Dry, Far Inland, Hills, Low: Meadow & Cherry Grove
 Cold, Dry, Far Inland, Hills, Mid: Meadow & Cherry Grove
 Cold, Dry, Far Inland, Hills, High: Meadow & Cherry Grove
 Cold, Dry, Far Inland, Hills, Peak: Meadow & Cherry Grove
-Cold, Dry, Far Inland, Slopes, Valley: Orchid Swamp
-Cold, Dry, Far Inland, Slopes, Low: Orchid Swamp
-Cold, Dry, Far Inland, Slopes, Mid: Orchid Swamp
-Cold, Dry, Far Inland, Slopes, High: Orchid Swamp
-Cold, Dry, Far Inland, Slopes, Peak: Orchid Swamp
-Cold, Dry, Far Inland, Flat, Valley: Moonlight Valley
-Cold, Dry, Far Inland, Flat, Low: Steppe & Moonlight Valley
-Cold, Dry, Far Inland, Flat, Mid: Steppe & Moonlight Valley
-Cold, Dry, Far Inland, Flat, High: Steppe & Moonlight Valley
-Cold, Dry, Far Inland, Flat, Peak: Steppe & Moonlight Valley
-Cold, Dry, Far Inland, Very Flat, Valley: Moonlight Valley
-Cold, Dry, Far Inland, Very Flat, Low: Moonlight Valley
-Cold, Dry, Far Inland, Very Flat, Mid: Moonlight Valley
-Cold, Dry, Far Inland, Very Flat, High: Moonlight Valley
-Cold, Dry, Far Inland, Very Flat, Peak: Moonlight Valley
+Cold, Dry, Far Inland, Slopes, Valley: Meadow
+Cold, Dry, Far Inland, Slopes, Low: Meadow
+Cold, Dry, Far Inland, Slopes, Mid: Meadow
+Cold, Dry, Far Inland, Slopes, High: Meadow & Cherry Grove
+Cold, Dry, Far Inland, Slopes, Peak: Meadow & Cherry Grove
+Cold, Dry, Far Inland, Flat, Valley: Steppe
+Cold, Dry, Far Inland, Flat, Low: Steppe
+Cold, Dry, Far Inland, Flat, Mid: Steppe
+Cold, Dry, Far Inland, Flat, High: Steppe
+Cold, Dry, Far Inland, Flat, Peak: Steppe
+Cold, Dry, Far Inland, Very Flat, Valley: Cloud Forest
+Cold, Dry, Far Inland, Very Flat, Low: Cloud Forest
+Cold, Dry, Far Inland, Very Flat, Mid: Cloud Forest
+Cold, Dry, Far Inland, Very Flat, High: Cloud Forest
+Cold, Dry, Far Inland, Very Flat, Peak: Cloud Forest
 Cold, Dry, Far Inland, Extremely Flat, Valley: Windswept Hills
 Cold, Dry, Far Inland, Extremely Flat, Low: Windswept Hills
 Cold, Dry, Far Inland, Extremely Flat, Mid: Windswept Hills
@@ -1285,11 +1283,11 @@ Cold, Neutral, Far Inland, Hills, Low: Yellowstone
 Cold, Neutral, Far Inland, Hills, Mid: Yellowstone
 Cold, Neutral, Far Inland, Hills, High: Yellowstone
 Cold, Neutral, Far Inland, Hills, Peak: Yellowstone
-Cold, Neutral, Far Inland, Slopes, Valley: Swamp
-Cold, Neutral, Far Inland, Slopes, Low: Swamp
-Cold, Neutral, Far Inland, Slopes, Mid: Swamp
-Cold, Neutral, Far Inland, Slopes, High: Swamp
-Cold, Neutral, Far Inland, Slopes, Peak: Swamp
+Cold, Neutral, Far Inland, Slopes, Valley: Yellowstone
+Cold, Neutral, Far Inland, Slopes, Low: Yellowstone
+Cold, Neutral, Far Inland, Slopes, Mid: Yellowstone
+Cold, Neutral, Far Inland, Slopes, High: Yellowstone
+Cold, Neutral, Far Inland, Slopes, Peak: Yellowstone
 Cold, Neutral, Far Inland, Flat, Valley: Alpine Highlands
 Cold, Neutral, Far Inland, Flat, Low: Alpine Highlands
 Cold, Neutral, Far Inland, Flat, Mid: Alpine Highlands
@@ -1438,11 +1436,11 @@ Cold, Wet, Far Inland, Hills, Low: Yellowstone
 Cold, Wet, Far Inland, Hills, Mid: Yellowstone
 Cold, Wet, Far Inland, Hills, High: Yellowstone
 Cold, Wet, Far Inland, Hills, Peak: Yellowstone
-Cold, Wet, Far Inland, Slopes, Valley: Swamp
-Cold, Wet, Far Inland, Slopes, Low: Autumnal Forest & Swamp
-Cold, Wet, Far Inland, Slopes, Mid: Autumnal Forest & Swamp
-Cold, Wet, Far Inland, Slopes, High: Swamp
-Cold, Wet, Far Inland, Slopes, Peak: Swamp
+Cold, Wet, Far Inland, Slopes, Valley: Yellowstone
+Cold, Wet, Far Inland, Slopes, Low: Autumnal Forest & Yellowstone
+Cold, Wet, Far Inland, Slopes, Mid: Autumnal Forest & Yellowstone
+Cold, Wet, Far Inland, Slopes, High: Yellowstone
+Cold, Wet, Far Inland, Slopes, Peak: Yellowstone
 Cold, Wet, Far Inland, Flat, Valley: Alpine Highlands
 Cold, Wet, Far Inland, Flat, Low: Forested Highlands & Alpine Highlands
 Cold, Wet, Far Inland, Flat, Mid: Forested Highlands & Alpine Highlands
@@ -1459,35 +1457,31 @@ Cold, Wet, Far Inland, Extremely Flat, Mid: Cloud Forest
 Cold, Wet, Far Inland, Extremely Flat, High: Cloud Forest
 Cold, Wet, Far Inland, Extremely Flat, Peak: Cloud Forest
 Cold, Humid, Coastal, Extreme Mountains, Valley: River
-Cold, Humid, Coastal, Extreme Mountains, Low: Moonlight Grove
-Cold, Humid, Coastal, Extreme Mountains, Mid Ascending: Stony Shore
-Cold, Humid, Coastal, Extreme Mountains, Mid Descending: Moonlight Grove
-Cold, Humid, Coastal, Extreme Mountains, High Ascending: Stony Shore
-Cold, Humid, Coastal, Extreme Mountains, High Descending: Moonlight Grove
+Cold, Humid, Coastal, Extreme Mountains, Low: Stony Shore
+Cold, Humid, Coastal, Extreme Mountains, Mid: Stony Shore
+Cold, Humid, Coastal, Extreme Mountains, High: Stony Shore
 Cold, Humid, Coastal, Extreme Mountains, Peak: Stony Shore
 Cold, Humid, Coastal, Mountains, Valley: River
-Cold, Humid, Coastal, Mountains, Low: Moonlight Grove
-Cold, Humid, Coastal, Mountains, Mid Ascending: Stony Shore
-Cold, Humid, Coastal, Mountains, Mid Descending: Moonlight Grove
-Cold, Humid, Coastal, Mountains, High Ascending: Stony Shore
-Cold, Humid, Coastal, Mountains, High Descending: Moonlight Grove
+Cold, Humid, Coastal, Mountains, Low: Stony Shore
+Cold, Humid, Coastal, Mountains, Mid: Stony Shore
+Cold, Humid, Coastal, Mountains, High: Stony Shore
 Cold, Humid, Coastal, Mountains, Peak: Stony Shore
 Cold, Humid, Coastal, Hills, Valley: River
 Cold, Humid, Coastal, Hills, Low: Gravel Beach & Beach
 Cold, Humid, Coastal, Hills, Mid Ascending: Stony Shore
 Cold, Humid, Coastal, Hills, Mid Descending: Gravel Beach & Beach
-Cold, Humid, Coastal, Hills, High: Moonlight Grove & Lavender Forest
-Cold, Humid, Coastal, Hills, Peak: Moonlight Grove & Lavender Forest
+Cold, Humid, Coastal, Hills, High: Wintry Forest
+Cold, Humid, Coastal, Hills, Peak: Wintry Forest
 Cold, Humid, Coastal, Slopes, Valley: River
 Cold, Humid, Coastal, Slopes, Low: Gravel Beach & Beach
-Cold, Humid, Coastal, Slopes, Mid: Moonlight Grove & Lavender Forest
-Cold, Humid, Coastal, Slopes, High: Moonlight Grove & Lavender Forest
-Cold, Humid, Coastal, Slopes, Peak: Moonlight Grove & Lavender Forest
+Cold, Humid, Coastal, Slopes, Mid: Wintry Forest
+Cold, Humid, Coastal, Slopes, High: Wintry Forest
+Cold, Humid, Coastal, Slopes, Peak: Wintry Forest
 Cold, Humid, Coastal, Flat, Valley: River
 Cold, Humid, Coastal, Flat, Low: Beach
-Cold, Humid, Coastal, Flat, Mid: Beach & Lavender Forest
-Cold, Humid, Coastal, Flat, High: Moonlight Grove & Lavender Forest
-Cold, Humid, Coastal, Flat, Peak: Moonlight Grove & Lavender Forest
+Cold, Humid, Coastal, Flat, Mid: Beach & Wintry Forest
+Cold, Humid, Coastal, Flat, High: Wintry Forest
+Cold, Humid, Coastal, Flat, Peak: Wintry Forest
 Cold, Humid, Coastal, Very Flat, Valley: River
 Cold, Humid, Coastal, Very Flat, Low: Beach & Windswept Forest
 Cold, Humid, Coastal, Very Flat, Mid: Beach & Windswept Forest
@@ -1495,36 +1489,34 @@ Cold, Humid, Coastal, Very Flat, High: Windswept Forest
 Cold, Humid, Coastal, Very Flat, Peak: Windswept Forest
 Cold, Humid, Coastal, Extremely Flat, Valley: River
 Cold, Humid, Coastal, Extremely Flat, Low: Beach
-Cold, Humid, Coastal, Extremely Flat, Mid: Beach & Lavender Forest
-Cold, Humid, Coastal, Extremely Flat, High Ascending: Moonlight Grove & Lavender Forest
-Cold, Humid, Coastal, Extremely Flat, High Descending: Swamp
+Cold, Humid, Coastal, Extremely Flat, Mid: Beach & Swamp
+Cold, Humid, Coastal, Extremely Flat, High: Swamp
 Cold, Humid, Coastal, Extremely Flat, Peak: Swamp
 Cold, Humid, Near Inland, Extreme Mountains, Valley: River
-Cold, Humid, Near Inland, Extreme Mountains, Low: Moonlight Grove
+Cold, Humid, Near Inland, Extreme Mountains, Low: Meadow
 Cold, Humid, Near Inland, Extreme Mountains, Mid: Grove
-Cold, Humid, Near Inland, Extreme Mountains, High Ascending: Grove
-Cold, Humid, Near Inland, Extreme Mountains, High Descending: Alpine Grove
+Cold, Humid, Near Inland, Extreme Mountains, High: Alpine Grove
 Cold, Humid, Near Inland, Extreme Mountains, Peak: Jagged Peaks & Frozen Peaks
 Cold, Humid, Near Inland, Mountains, Valley: River
-Cold, Humid, Near Inland, Mountains, Low: Moonlight Grove
-Cold, Humid, Near Inland, Mountains, Mid: Moonlight Grove
-Cold, Humid, Near Inland, Mountains, High: Moonlight Grove
+Cold, Humid, Near Inland, Mountains, Low: Meadow
+Cold, Humid, Near Inland, Mountains, Mid: Cherry Grove
+Cold, Humid, Near Inland, Mountains, High: Snowy Cherry Grove
 Cold, Humid, Near Inland, Mountains, Peak: Jagged Peaks & Frozen Peaks
 Cold, Humid, Near Inland, Hills, Valley: River
-Cold, Humid, Near Inland, Hills, Low: Moonlight Grove & Lavender Forest
-Cold, Humid, Near Inland, Hills, Mid: Moonlight Grove & Lavender Forest
-Cold, Humid, Near Inland, Hills, High: Moonlight Grove & Lavender Forest
-Cold, Humid, Near Inland, Hills, Peak: Moonlight Grove & Lavender Forest
+Cold, Humid, Near Inland, Hills, Low: Wintry Forest
+Cold, Humid, Near Inland, Hills, Mid: Wintry Forest
+Cold, Humid, Near Inland, Hills, High: Wintry Forest
+Cold, Humid, Near Inland, Hills, Peak: Wintry Forest
 Cold, Humid, Near Inland, Slopes, Valley: River
-Cold, Humid, Near Inland, Slopes, Low: Moonlight Grove & Lavender Forest
-Cold, Humid, Near Inland, Slopes, Mid: Moonlight Grove & Lavender Forest
-Cold, Humid, Near Inland, Slopes, High: Moonlight Grove & Lavender Forest
-Cold, Humid, Near Inland, Slopes, Peak: Moonlight Grove & Lavender Forest
+Cold, Humid, Near Inland, Slopes, Low: Wintry Forest
+Cold, Humid, Near Inland, Slopes, Mid: Wintry Forest
+Cold, Humid, Near Inland, Slopes, High: Wintry Forest
+Cold, Humid, Near Inland, Slopes, Peak: Wintry Forest
 Cold, Humid, Near Inland, Flat, Valley: River
-Cold, Humid, Near Inland, Flat, Low: Moonlight Grove & Lavender Forest
-Cold, Humid, Near Inland, Flat, Mid: Moonlight Grove & Lavender Forest
-Cold, Humid, Near Inland, Flat, High: Moonlight Grove & Lavender Forest
-Cold, Humid, Near Inland, Flat, Peak: Moonlight Grove & Lavender Forest
+Cold, Humid, Near Inland, Flat, Low: Wintry Lowlands
+Cold, Humid, Near Inland, Flat, Mid: Wintry Lowlands
+Cold, Humid, Near Inland, Flat, High: Wintry Forest
+Cold, Humid, Near Inland, Flat, Peak: Wintry Forest
 Cold, Humid, Near Inland, Very Flat, Valley: River
 Cold, Humid, Near Inland, Very Flat, Low: Windswept Forest
 Cold, Humid, Near Inland, Very Flat, Mid: Windswept Forest
@@ -1535,26 +1527,26 @@ Cold, Humid, Near Inland, Extremely Flat, Low: Swamp
 Cold, Humid, Near Inland, Extremely Flat, Mid: Swamp
 Cold, Humid, Near Inland, Extremely Flat, High: Swamp
 Cold, Humid, Near Inland, Extremely Flat, Peak: Swamp
-Cold, Humid, Mid Inland, Extreme Mountains, Valley: Moonlight Grove
-Cold, Humid, Mid Inland, Extreme Mountains, Low: Moonlight Grove
+Cold, Humid, Mid Inland, Extreme Mountains, Valley: River
+Cold, Humid, Mid Inland, Extreme Mountains, Low: Meadow
 Cold, Humid, Mid Inland, Extreme Mountains, Mid: Grove
 Cold, Humid, Mid Inland, Extreme Mountains, High: Jagged Peaks & Frozen Peaks
 Cold, Humid, Mid Inland, Extreme Mountains, Peak: Jagged Peaks & Frozen Peaks
-Cold, Humid, Mid Inland, Mountains, Valley: Moonlight Grove
-Cold, Humid, Mid Inland, Mountains, Low: Moonlight Grove
-Cold, Humid, Mid Inland, Mountains, Mid: Moonlight Grove
+Cold, Humid, Mid Inland, Mountains, Valley: River
+Cold, Humid, Mid Inland, Mountains, Low: Meadow
+Cold, Humid, Mid Inland, Mountains, Mid: Grove
 Cold, Humid, Mid Inland, Mountains, High: Grove
 Cold, Humid, Mid Inland, Mountains, Peak: Jagged Peaks & Frozen Peaks
 Cold, Humid, Mid Inland, Hills, Valley: River
-Cold, Humid, Mid Inland, Hills, Low: Moonlight Grove
-Cold, Humid, Mid Inland, Hills, Mid: Moonlight Grove
-Cold, Humid, Mid Inland, Hills, High: Moonlight Grove
-Cold, Humid, Mid Inland, Hills, Peak: Moonlight Grove
+Cold, Humid, Mid Inland, Hills, Low: Meadow
+Cold, Humid, Mid Inland, Hills, Mid: Meadow
+Cold, Humid, Mid Inland, Hills, High: Snowy Shield
+Cold, Humid, Mid Inland, Hills, Peak: Snowy Shield
 Cold, Humid, Mid Inland, Slopes, Valley: River
-Cold, Humid, Mid Inland, Slopes, Low: Moonlight Grove
-Cold, Humid, Mid Inland, Slopes, Mid: Moonlight Grove
-Cold, Humid, Mid Inland, Slopes, High: Moonlight Grove
-Cold, Humid, Mid Inland, Slopes, Peak: Moonlight Grove
+Cold, Humid, Mid Inland, Slopes, Low: Snowy Maple Forest
+Cold, Humid, Mid Inland, Slopes, Mid: Snowy Maple Forest
+Cold, Humid, Mid Inland, Slopes, High: Snowy Shield
+Cold, Humid, Mid Inland, Slopes, Peak: Snowy Shield
 Cold, Humid, Mid Inland, Flat, Valley: River
 Cold, Humid, Mid Inland, Flat, Low: Forested Highlands
 Cold, Humid, Mid Inland, Flat, Mid: Forested Highlands
@@ -1570,28 +1562,28 @@ Cold, Humid, Mid Inland, Extremely Flat, Low: Windswept Spires
 Cold, Humid, Mid Inland, Extremely Flat, Mid: Windswept Spires
 Cold, Humid, Mid Inland, Extremely Flat, High: Windswept Spires
 Cold, Humid, Mid Inland, Extremely Flat, Peak: Windswept Spires
-Cold, Humid, Far Inland, Extreme Mountains, Valley: Moonlight Grove
-Cold, Humid, Far Inland, Extreme Mountains, Low: Grove
+Cold, Humid, Far Inland, Extreme Mountains, Valley: Snowy Cherry Grove
+Cold, Humid, Far Inland, Extreme Mountains, Low: Snowy Cherry Grove
 Cold, Humid, Far Inland, Extreme Mountains, Mid Ascending: Grove
 Cold, Humid, Far Inland, Extreme Mountains, Mid Descending: Alpine Grove
 Cold, Humid, Far Inland, Extreme Mountains, High: Jagged Peaks & Frozen Peaks
 Cold, Humid, Far Inland, Extreme Mountains, Peak: Jagged Peaks & Frozen Peaks
-Cold, Humid, Far Inland, Mountains, Valley: Moonlight Grove
-Cold, Humid, Far Inland, Mountains, Low: Moonlight Grove
-Cold, Humid, Far Inland, Mountains, Mid: Moonlight Grove
+Cold, Humid, Far Inland, Mountains, Valley: River
+Cold, Humid, Far Inland, Mountains, Low: Snowy Cherry Grove
+Cold, Humid, Far Inland, Mountains, Mid: Snowy Cherry Grove
 Cold, Humid, Far Inland, Mountains, High Ascending: Grove
 Cold, Humid, Far Inland, Mountains, High Descending: Rocky Mountains
 Cold, Humid, Far Inland, Mountains, Peak: Jagged Peaks & Frozen Peaks
 Cold, Humid, Far Inland, Hills, Valley: River
-Cold, Humid, Far Inland, Hills, Low: Moonlight Grove
-Cold, Humid, Far Inland, Hills, Mid: Moonlight Grove
-Cold, Humid, Far Inland, Hills, High: Moonlight Grove
-Cold, Humid, Far Inland, Hills, Peak: Moonlight Grove
-Cold, Humid, Far Inland, Slopes, Valley: Swamp
-Cold, Humid, Far Inland, Slopes, Low: Swamp
-Cold, Humid, Far Inland, Slopes, Mid: Swamp
-Cold, Humid, Far Inland, Slopes, High: Swamp
-Cold, Humid, Far Inland, Slopes, Peak: Swamp
+Cold, Humid, Far Inland, Hills, Low: Snowy Maple Forest
+Cold, Humid, Far Inland, Hills, Mid: Snowy Maple Forest
+Cold, Humid, Far Inland, Hills, High: Highlands
+Cold, Humid, Far Inland, Hills, Peak: Highlands
+Cold, Humid, Far Inland, Slopes, Valley: River
+Cold, Humid, Far Inland, Slopes, Low: Forested Highlands
+Cold, Humid, Far Inland, Slopes, Mid: Forested Highlands
+Cold, Humid, Far Inland, Slopes, High: Snowy Maple Forest
+Cold, Humid, Far Inland, Slopes, Peak: Snowy Maple Forest
 Cold, Humid, Far Inland, Flat, Valley: Forested Highlands
 Cold, Humid, Far Inland, Flat, Low: Forested Highlands
 Cold, Humid, Far Inland, Flat, Mid: Forested Highlands
@@ -1645,9 +1637,8 @@ Mild, Arid, Coastal, Very Flat, Peak: Windswept Savanna
 Mild, Arid, Coastal, Extremely Flat, Valley: River
 Mild, Arid, Coastal, Extremely Flat, Low: Beach
 Mild, Arid, Coastal, Extremely Flat, Mid: Beach & Shrubland
-Mild, Arid, Coastal, Extremely Flat, High Ascending: Shrubland
-Mild, Arid, Coastal, Extremely Flat, High Descending: Orchid Swamp
-Mild, Arid, Coastal, Extremely Flat, Peak: Orchid Swamp
+Mild, Arid, Coastal, Extremely Flat, High: Shrubland
+Mild, Arid, Coastal, Extremely Flat, Peak: Swamp
 Mild, Arid, Near Inland, Extreme Mountains, Valley: River
 Mild, Arid, Near Inland, Extreme Mountains, Low: Shrubland
 Mild, Arid, Near Inland, Extreme Mountains, Mid: Snowy Slopes
@@ -1680,9 +1671,9 @@ Mild, Arid, Near Inland, Very Flat, High: Windswept Savanna
 Mild, Arid, Near Inland, Very Flat, Peak: Windswept Savanna
 Mild, Arid, Near Inland, Extremely Flat, Valley: Marsh
 Mild, Arid, Near Inland, Extremely Flat, Low: Marsh
-Mild, Arid, Near Inland, Extremely Flat, Mid: Marsh & Orchid Swamp
-Mild, Arid, Near Inland, Extremely Flat, High: Orchid Swamp
-Mild, Arid, Near Inland, Extremely Flat, Peak: Orchid Swamp
+Mild, Arid, Near Inland, Extremely Flat, Mid: Marsh
+Mild, Arid, Near Inland, Extremely Flat, High: Shrubland
+Mild, Arid, Near Inland, Extremely Flat, Peak: Shrubland
 Mild, Arid, Mid Inland, Extreme Mountains, Valley: Shrubland
 Mild, Arid, Mid Inland, Extreme Mountains, Low: Shrubland
 Mild, Arid, Mid Inland, Extreme Mountains, Mid: Snowy Slopes
@@ -1736,11 +1727,11 @@ Mild, Arid, Far Inland, Hills, Low: Meadow & Cherry Grove
 Mild, Arid, Far Inland, Hills, Mid: Meadow & Cherry Grove
 Mild, Arid, Far Inland, Hills, High: Meadow & Cherry Grove
 Mild, Arid, Far Inland, Hills, Peak: Meadow & Cherry Grove
-Mild, Arid, Far Inland, Slopes, Valley: Orchid Swamp
-Mild, Arid, Far Inland, Slopes, Low: Orchid Swamp
-Mild, Arid, Far Inland, Slopes, Mid: Orchid Swamp
-Mild, Arid, Far Inland, Slopes, High: Orchid Swamp
-Mild, Arid, Far Inland, Slopes, Peak: Orchid Swamp
+Mild, Arid, Far Inland, Slopes, Valley: River
+Mild, Arid, Far Inland, Slopes, Low: Meadow
+Mild, Arid, Far Inland, Slopes, Mid: Meadow
+Mild, Arid, Far Inland, Slopes, High: Meadow & Cherry Grove
+Mild, Arid, Far Inland, Slopes, Peak: Meadow & Cherry Grove
 Mild, Arid, Far Inland, Flat, Valley: Steppe
 Mild, Arid, Far Inland, Flat, Low: Steppe
 Mild, Arid, Far Inland, Flat, Mid: Steppe
@@ -1794,9 +1785,8 @@ Mild, Dry, Coastal, Very Flat, Peak: Windswept Savanna
 Mild, Dry, Coastal, Extremely Flat, Valley: River
 Mild, Dry, Coastal, Extremely Flat, Low: Beach
 Mild, Dry, Coastal, Extremely Flat, Mid: Beach & Plains
-Mild, Dry, Coastal, Extremely Flat, High Ascending: Plains
-Mild, Dry, Coastal, Extremely Flat, High Descending: Orchid Swamp
-Mild, Dry, Coastal, Extremely Flat, Peak: Orchid Swamp
+Mild, Dry, Coastal, Extremely Flat, High: Plains
+Mild, Dry, Coastal, Extremely Flat, Peak: Plains
 Mild, Dry, Near Inland, Extreme Mountains, Valley: River
 Mild, Dry, Near Inland, Extreme Mountains, Low: Plains
 Mild, Dry, Near Inland, Extreme Mountains, Mid: Snowy Slopes
@@ -1827,11 +1817,11 @@ Mild, Dry, Near Inland, Very Flat, Low: Windswept Savanna
 Mild, Dry, Near Inland, Very Flat, Mid: Windswept Savanna
 Mild, Dry, Near Inland, Very Flat, High: Windswept Savanna
 Mild, Dry, Near Inland, Very Flat, Peak: Windswept Savanna
-Mild, Dry, Near Inland, Extremely Flat, Valley: Orchid Swamp
-Mild, Dry, Near Inland, Extremely Flat, Low: Orchid Swamp
-Mild, Dry, Near Inland, Extremely Flat, Mid: Orchid Swamp
-Mild, Dry, Near Inland, Extremely Flat, High: Orchid Swamp
-Mild, Dry, Near Inland, Extremely Flat, Peak: Orchid Swamp
+Mild, Dry, Near Inland, Extremely Flat, Valley: Swamp
+Mild, Dry, Near Inland, Extremely Flat, Low: Swamp
+Mild, Dry, Near Inland, Extremely Flat, Mid: Swamp
+Mild, Dry, Near Inland, Extremely Flat, High: Plains
+Mild, Dry, Near Inland, Extremely Flat, Peak: Plains
 Mild, Dry, Mid Inland, Extreme Mountains, Valley: Sunflower Plains
 Mild, Dry, Mid Inland, Extreme Mountains, Low: Plains
 Mild, Dry, Mid Inland, Extreme Mountains, Mid: Snowy Slopes
@@ -1885,11 +1875,11 @@ Mild, Dry, Far Inland, Hills, Low: Meadow & Cherry Grove
 Mild, Dry, Far Inland, Hills, Mid: Meadow & Cherry Grove
 Mild, Dry, Far Inland, Hills, High: Meadow & Cherry Grove
 Mild, Dry, Far Inland, Hills, Peak: Meadow & Cherry Grove
-Mild, Dry, Far Inland, Slopes, Valley: Orchid Swamp
-Mild, Dry, Far Inland, Slopes, Low: Orchid Swamp
-Mild, Dry, Far Inland, Slopes, Mid: Orchid Swamp
-Mild, Dry, Far Inland, Slopes, High: Orchid Swamp
-Mild, Dry, Far Inland, Slopes, Peak: Orchid Swamp
+Mild, Dry, Far Inland, Slopes, Valley: River
+Mild, Dry, Far Inland, Slopes, Low: Meadow
+Mild, Dry, Far Inland, Slopes, Mid: Meadow
+Mild, Dry, Far Inland, Slopes, High: Meadow & Cherry Grove
+Mild, Dry, Far Inland, Slopes, Peak: Meadow & Cherry Grove
 Mild, Dry, Far Inland, Flat, Valley: Highlands
 Mild, Dry, Far Inland, Flat, Low: Highlands
 Mild, Dry, Far Inland, Flat, Mid: Highlands
@@ -1996,12 +1986,12 @@ Mild, Neutral, Mid Inland, Hills, Valley: River
 Mild, Neutral, Mid Inland, Hills, Low: Oak Woodland & Forest
 Mild, Neutral, Mid Inland, Hills, Mid: Oak Woodland & Forest
 Mild, Neutral, Mid Inland, Hills, High: Forest
-Mild, Neutral, Mid Inland, Hills, Peak: Dark Forest & Pale Garden
+Mild, Neutral, Mid Inland, Hills, Peak: Dark Forest
 Mild, Neutral, Mid Inland, Slopes, Valley: River
 Mild, Neutral, Mid Inland, Slopes, Low: Oak Woodland & Forest
 Mild, Neutral, Mid Inland, Slopes, Mid: Oak Woodland & Forest
 Mild, Neutral, Mid Inland, Slopes, High: Dark Forest & Pale Garden
-Mild, Neutral, Mid Inland, Slopes, Peak: Dark Forest & Pale Garden
+Mild, Neutral, Mid Inland, Slopes, Peak: Dark Forest
 Mild, Neutral, Mid Inland, Flat, Valley: River
 Mild, Neutral, Mid Inland, Flat, Low: Oak Woodland & Highlands
 Mild, Neutral, Mid Inland, Flat, Mid: Oak Woodland & Highlands
@@ -2035,11 +2025,11 @@ Mild, Neutral, Far Inland, Hills, Low: Oak Woodland & Forest
 Mild, Neutral, Far Inland, Hills, Mid: Oak Woodland & Forest
 Mild, Neutral, Far Inland, Hills, High: Forest
 Mild, Neutral, Far Inland, Hills, Peak: Forest
-Mild, Neutral, Far Inland, Slopes, Valley: Swamp
-Mild, Neutral, Far Inland, Slopes, Low: Oak Woodland & Swamp
-Mild, Neutral, Far Inland, Slopes, Mid: Oak Woodland & Swamp
+Mild, Neutral, Far Inland, Slopes, Valley: River
+Mild, Neutral, Far Inland, Slopes, Low: Oak Woodland & Dark Forest
+Mild, Neutral, Far Inland, Slopes, Mid: Oak Woodland & Dark Forest
 Mild, Neutral, Far Inland, Slopes, High: Dark Forest & Pale Garden
-Mild, Neutral, Far Inland, Slopes, Peak: Dark Forest & Pale Garden
+Mild, Neutral, Far Inland, Slopes, Peak: Dark Forest
 Mild, Neutral, Far Inland, Flat, Valley: Highlands
 Mild, Neutral, Far Inland, Flat, Low: Highlands
 Mild, Neutral, Far Inland, Flat, Mid: Highlands
@@ -2098,8 +2088,8 @@ Mild, Wet, Coastal, Extremely Flat, High Descending: Swamp
 Mild, Wet, Coastal, Extremely Flat, Peak: Swamp
 Mild, Wet, Near Inland, Extreme Mountains, Valley: River
 Mild, Wet, Near Inland, Extreme Mountains, Low: Old Growth Spruce Taiga & Old Growth Pine Taiga
-Mild, Wet, Near Inland, Extreme Mountains, Mid: Grove & Taiga
-Mild, Wet, Near Inland, Extreme Mountains, High Ascending: Grove & Taiga
+Mild, Wet, Near Inland, Extreme Mountains, Mid: Siberian Grove & Taiga
+Mild, Wet, Near Inland, Extreme Mountains, High Ascending: Siberian Grove & Taiga
 Mild, Wet, Near Inland, Extreme Mountains, High Descending: Alpine Grove
 Mild, Wet, Near Inland, Extreme Mountains, Peak: Rocky Mountains
 Mild, Wet, Near Inland, Mountains, Valley: River
@@ -2123,7 +2113,7 @@ Mild, Wet, Near Inland, Flat, Valley: River
 Mild, Wet, Near Inland, Flat, Low: Birch Forest & Old Growth Birch Forest
 Mild, Wet, Near Inland, Flat, Mid: Birch Forest & Old Growth Birch Forest
 Mild, Wet, Near Inland, Flat, High: Dark Forest & Pale Garden
-Mild, Wet, Near Inland, Flat, Peak: Dark Forest & Pale Garden
+Mild, Wet, Near Inland, Flat, Peak: Dark Forest
 Mild, Wet, Near Inland, Very Flat, Valley: River
 Mild, Wet, Near Inland, Very Flat, Low: Windswept Savanna
 Mild, Wet, Near Inland, Very Flat, Mid: Windswept Savanna
@@ -2159,19 +2149,19 @@ Mild, Wet, Mid Inland, Flat, Low: Forested Highlands & Temperate Highlands
 Mild, Wet, Mid Inland, Flat, Mid: Forested Highlands & Temperate Highlands
 Mild, Wet, Mid Inland, Flat, High: Forested Highlands & Temperate Highlands
 Mild, Wet, Mid Inland, Flat, Peak: Forested Highlands & Temperate Highlands
-Mild, Wet, Mid Inland, Very Flat, Valley: Lavender Valley
-Mild, Wet, Mid Inland, Very Flat, Low: Lavender Valley
-Mild, Wet, Mid Inland, Very Flat, Mid: Lavender Valley
-Mild, Wet, Mid Inland, Very Flat, High: Lavender Valley
-Mild, Wet, Mid Inland, Very Flat, Peak: Lavender Valley
+Mild, Wet, Mid Inland, Very Flat, Valley: Stony Spires
+Mild, Wet, Mid Inland, Very Flat, Low: Stony Spires
+Mild, Wet, Mid Inland, Very Flat, Mid: Stony Spires
+Mild, Wet, Mid Inland, Very Flat, High: Stony Spires
+Mild, Wet, Mid Inland, Very Flat, Peak: Stony Spires
 Mild, Wet, Mid Inland, Extremely Flat, Valley: River
-Mild, Wet, Mid Inland, Extremely Flat, Low: Stony Spires
-Mild, Wet, Mid Inland, Extremely Flat, Mid: Stony Spires
-Mild, Wet, Mid Inland, Extremely Flat, High: Stony Spires
-Mild, Wet, Mid Inland, Extremely Flat, Peak: Stony Spires
+Mild, Wet, Mid Inland, Extremely Flat, Low: Swamp
+Mild, Wet, Mid Inland, Extremely Flat, Mid: Swamp
+Mild, Wet, Mid Inland, Extremely Flat, High: Swamp & Mangrove Swamp
+Mild, Wet, Mid Inland, Extremely Flat, Peak: Swamp & Mangrove Swamp
 Mild, Wet, Far Inland, Extreme Mountains, Valley: Valley Clearing
 Mild, Wet, Far Inland, Extreme Mountains, Low: Grove & Taiga
-Mild, Wet, Far Inland, Extreme Mountains, Mid Ascending: Grove & Taiga
+Mild, Wet, Far Inland, Extreme Mountains, Mid Ascending: Siberian Grove & Taiga
 Mild, Wet, Far Inland, Extreme Mountains, Mid Descending: Alpine Grove
 Mild, Wet, Far Inland, Extreme Mountains, High Ascending: Rocky Mountains
 Mild, Wet, Far Inland, Extreme Mountains, High Descending: Jagged Peaks & Rocky Mountains
@@ -2183,30 +2173,30 @@ Mild, Wet, Far Inland, Mountains, High Ascending: Grove & Taiga
 Mild, Wet, Far Inland, Mountains, High Descending: Rocky Mountains
 Mild, Wet, Far Inland, Mountains, Peak: Jagged Peaks & Rocky Mountains
 Mild, Wet, Far Inland, Hills, Valley: River
-Mild, Wet, Far Inland, Hills, Low: Dark Forest & Pale Garden
+Mild, Wet, Far Inland, Hills, Low: Dark Forest
 Mild, Wet, Far Inland, Hills, Mid: Dark Forest & Pale Garden
 Mild, Wet, Far Inland, Hills, High: Old Growth Spruce Taiga & Old Growth Pine Taiga
 Mild, Wet, Far Inland, Hills, Peak: Old Growth Spruce Taiga & Old Growth Pine Taiga
-Mild, Wet, Far Inland, Slopes, Valley: Swamp
-Mild, Wet, Far Inland, Slopes, Low: Swamp
-Mild, Wet, Far Inland, Slopes, Mid: Swamp
+Mild, Wet, Far Inland, Slopes, Valley: River
+Mild, Wet, Far Inland, Slopes, Low: Dark Forest
+Mild, Wet, Far Inland, Slopes, Mid: Dark Forest
 Mild, Wet, Far Inland, Slopes, High: Dark Forest & Pale Garden
-Mild, Wet, Far Inland, Slopes, Peak: Dark Forest & Pale Garden
+Mild, Wet, Far Inland, Slopes, Peak: Dark Forest
 Mild, Wet, Far Inland, Flat, Valley: Temperate Highlands
 Mild, Wet, Far Inland, Flat, Low: Forested Highlands & Temperate Highlands
 Mild, Wet, Far Inland, Flat, Mid: Forested Highlands & Temperate Highlands
 Mild, Wet, Far Inland, Flat, High: Forested Highlands & Temperate Highlands
 Mild, Wet, Far Inland, Flat, Peak: Forested Highlands & Temperate Highlands
-Mild, Wet, Far Inland, Very Flat, Valley: Lavender Valley
-Mild, Wet, Far Inland, Very Flat, Low: Lavender Valley
-Mild, Wet, Far Inland, Very Flat, Mid: Lavender Valley
-Mild, Wet, Far Inland, Very Flat, High: Lavender Valley
-Mild, Wet, Far Inland, Very Flat, Peak: Lavender Valley
-Mild, Wet, Far Inland, Extremely Flat, Valley: Haze Mountain
-Mild, Wet, Far Inland, Extremely Flat, Low: Haze Mountain
-Mild, Wet, Far Inland, Extremely Flat, Mid: Haze Mountain
-Mild, Wet, Far Inland, Extremely Flat, High: Haze Mountain
-Mild, Wet, Far Inland, Extremely Flat, Peak: Haze Mountain
+Mild, Wet, Far Inland, Very Flat, Valley: Haze Mountain
+Mild, Wet, Far Inland, Very Flat, Low: Haze Mountain
+Mild, Wet, Far Inland, Very Flat, Mid: Haze Mountain
+Mild, Wet, Far Inland, Very Flat, High: Haze Mountain
+Mild, Wet, Far Inland, Very Flat, Peak: Haze Mountain
+Mild, Wet, Far Inland, Extremely Flat, Valley: River
+Mild, Wet, Far Inland, Extremely Flat, Low: Swamp
+Mild, Wet, Far Inland, Extremely Flat, Mid: Swamp
+Mild, Wet, Far Inland, Extremely Flat, High: Swamp & Mangrove Swamp
+Mild, Wet, Far Inland, Extremely Flat, Peak: Swamp & Mangrove Swamp
 Mild, Humid, Coastal, Extreme Mountains, Valley: River
 Mild, Humid, Coastal, Extreme Mountains, Low: Sakura Grove
 Mild, Humid, Coastal, Extreme Mountains, Mid Ascending: Stony Shore
@@ -2292,8 +2282,9 @@ Mild, Humid, Mid Inland, Extreme Mountains, Peak: Jagged Peaks & Frozen Peaks
 Mild, Humid, Mid Inland, Mountains, Valley: Sakura Grove
 Mild, Humid, Mid Inland, Mountains, Low: Sakura Grove
 Mild, Humid, Mid Inland, Mountains, Mid: Sakura Grove
-Mild, Humid, Mid Inland, Mountains, High: Grove
-Mild, Humid, Mid Inland, Mountains, Peak: Jagged Peaks & Frozen Peaks
+Mild, Humid, Far Inland, Mountains, High Ascending: Grove
+Mild, Humid, Far Inland, Mountains, High Descending: Rocky Mountains
+Mild, Humid, Far Inland, Mountains, Peak: Jagged Peaks & Frozen Peaks
 Mild, Humid, Mid Inland, Hills, Valley: River
 Mild, Humid, Mid Inland, Hills, Low: Sakura Grove
 Mild, Humid, Mid Inland, Hills, Mid: Sakura Grove
@@ -2322,25 +2313,24 @@ Mild, Humid, Mid Inland, Extremely Flat, Peak: Stony Spires
 Mild, Humid, Far Inland, Extreme Mountains, Valley: Sakura Grove
 Mild, Humid, Far Inland, Extreme Mountains, Low: Grove
 Mild, Humid, Far Inland, Extreme Mountains, Mid Ascending: Grove
-Mild, Humid, Far Inland, Extreme Mountains, Mid Descending: Alpine Grove
+Mild, Humid, Far Inland, Extreme Mountains, Mid Descending: Alpine Grove & Siberian Grove
 Mild, Humid, Far Inland, Extreme Mountains, High: Jagged Peaks & Frozen Peaks
 Mild, Humid, Far Inland, Extreme Mountains, Peak: Jagged Peaks & Frozen Peaks
 Mild, Humid, Far Inland, Mountains, Valley: Sakura Grove
 Mild, Humid, Far Inland, Mountains, Low: Sakura Grove
 Mild, Humid, Far Inland, Mountains, Mid: Sakura Grove
-Mild, Humid, Far Inland, Mountains, High Ascending: Grove
-Mild, Humid, Far Inland, Mountains, High Descending: Rocky Mountains
+Mild, Humid, Far Inland, Mountains, High: Grove
 Mild, Humid, Far Inland, Mountains, Peak: Jagged Peaks & Frozen Peaks
 Mild, Humid, Far Inland, Hills, Valley: River
 Mild, Humid, Far Inland, Hills, Low: Sakura Grove
 Mild, Humid, Far Inland, Hills, Mid: Sakura Grove
 Mild, Humid, Far Inland, Hills, High: Sakura Grove
 Mild, Humid, Far Inland, Hills, Peak: Sakura Grove
-Mild, Humid, Far Inland, Slopes, Valley: Swamp
-Mild, Humid, Far Inland, Slopes, Low: Swamp
-Mild, Humid, Far Inland, Slopes, Mid: Swamp
-Mild, Humid, Far Inland, Slopes, High: Swamp
-Mild, Humid, Far Inland, Slopes, Peak: Swamp
+Mild, Humid, Far Inland, Slopes, Valley: River
+Mild, Humid, Far Inland, Slopes, Low: Sakura Grove
+Mild, Humid, Far Inland, Slopes, Mid: Sakura Grove
+Mild, Humid, Far Inland, Slopes, High: Sakura Grove
+Mild, Humid, Far Inland, Slopes, Peak: Temperate Highlands
 Mild, Humid, Far Inland, Flat, Valley: Temperate Highlands
 Mild, Humid, Far Inland, Flat, Low: Temperate Highlands
 Mild, Humid, Far Inland, Flat, Mid: Temperate Highlands
@@ -2351,9 +2341,9 @@ Mild, Humid, Far Inland, Very Flat, Low: Sakura Valley
 Mild, Humid, Far Inland, Very Flat, Mid: Sakura Valley
 Mild, Humid, Far Inland, Very Flat, High: Sakura Valley
 Mild, Humid, Far Inland, Very Flat, Peak: Sakura Valley
-Mild, Humid, Far Inland, Extremely Flat, Valley: Jungle Mountains
-Mild, Humid, Far Inland, Extremely Flat, Low: Jungle Mountains
-Mild, Humid, Far Inland, Extremely Flat, Mid: Jungle Mountains
+Mild, Humid, Far Inland, Extremely Flat, Valley: Sparse Jungle
+Mild, Humid, Far Inland, Extremely Flat, Low: Sparse Jungle
+Mild, Humid, Far Inland, Extremely Flat, Mid: Jungle
 Mild, Humid, Far Inland, Extremely Flat, High: Jungle Mountains
 Mild, Humid, Far Inland, Extremely Flat, Peak: Jungle Mountains
 Warm, Arid, Coastal, Extreme Mountains, Valley: River
@@ -2402,8 +2392,10 @@ Warm, Arid, Near Inland, Extreme Mountains, High Descending: Savanna Badlands
 Warm, Arid, Near Inland, Extreme Mountains, Peak: Volcanic Peaks & White Mesa
 Warm, Arid, Near Inland, Mountains, Valley: River
 Warm, Arid, Near Inland, Mountains, Low: Savanna Badlands
-Warm, Arid, Near Inland, Mountains, Mid: Volcanic Crater & Savanna
-Warm, Arid, Near Inland, Mountains, High: Volcanic Crater & White Mesa
+Warm, Arid, Near Inland, Mountains, Mid Ascending: Volcanic Crater & Hot Shrubland
+Warm, Arid, Near Inland, Mountains, Mid Descending: Hot Shrubland
+Warm, Arid, Near Inland, Mountains, High Ascending: Volcanic Crater & Hot Shrubland
+Warm, Arid, Near Inland, Mountains, High Descending: Hot Shrubland
 Warm, Arid, Near Inland, Mountains, Peak: Volcanic Peaks & White Mesa
 Warm, Arid, Near Inland, Hills, Valley: River
 Warm, Arid, Near Inland, Hills, Low: Savanna
@@ -2438,9 +2430,9 @@ Warm, Arid, Mid Inland, Extreme Mountains, High Ascending: Volcanic Crater & Whi
 Warm, Arid, Mid Inland, Extreme Mountains, High Descending: Volcanic Peaks & White Mesa
 Warm, Arid, Mid Inland, Extreme Mountains, Peak: Volcanic Peaks & White Mesa
 Warm, Arid, Mid Inland, Mountains, Valley: Savanna Badlands
-Warm, Arid, Mid Inland, Mountains, Low: Savanna
-Warm, Arid, Mid Inland, Mountains, Mid Ascending: Volcanic Crater & Savanna
-Warm, Arid, Mid Inland, Mountains, Mid Descending: Savanna
+Warm, Arid, Mid Inland, Mountains, Low: Hot Shrubland
+Warm, Arid, Mid Inland, Mountains, Mid Ascending: Volcanic Crater & Hot Shrubland
+Warm, Arid, Mid Inland, Mountains, Mid Descending: Hot Shrubland
 Warm, Arid, Mid Inland, Mountains, High Ascending: Volcanic Crater & Savanna Badlands
 Warm, Arid, Mid Inland, Mountains, High Descending: Savanna Badlands
 Warm, Arid, Mid Inland, Mountains, Peak: Volcanic Peaks & White Mesa
@@ -2490,11 +2482,11 @@ Warm, Arid, Far Inland, Hills, Low: Savanna Badlands
 Warm, Arid, Far Inland, Hills, Mid: Savanna Badlands
 Warm, Arid, Far Inland, Hills, High: Savanna Badlands
 Warm, Arid, Far Inland, Hills, Peak: Savanna Badlands
-Warm, Arid, Far Inland, Slopes, Valley: Mangrove Swamp
-Warm, Arid, Far Inland, Slopes, Low: Mangrove Swamp
-Warm, Arid, Far Inland, Slopes, Mid: Mangrove Swamp
-Warm, Arid, Far Inland, Slopes, High: Mangrove Swamp
-Warm, Arid, Far Inland, Slopes, Peak: Mangrove Swamp
+Warm, Arid, Far Inland, Slopes, Valley: Savanna Badlands
+Warm, Arid, Far Inland, Slopes, Low: Savanna Badlands
+Warm, Arid, Far Inland, Slopes, Mid: Savanna Badlands
+Warm, Arid, Far Inland, Slopes, High: Arid Highlands
+Warm, Arid, Far Inland, Slopes, Peak: Arid Highlands
 Warm, Arid, Far Inland, Flat, Valley: Arid Highlands
 Warm, Arid, Far Inland, Flat, Low: Arid Highlands
 Warm, Arid, Far Inland, Flat, Mid: Arid Highlands
@@ -2646,11 +2638,11 @@ Warm, Dry, Far Inland, Hills, Low: Savanna Plateau
 Warm, Dry, Far Inland, Hills, Mid: Savanna Plateau
 Warm, Dry, Far Inland, Hills, High: Savanna Plateau
 Warm, Dry, Far Inland, Hills, Peak: Savanna Plateau
-Warm, Dry, Far Inland, Slopes, Valley: Mangrove Swamp
-Warm, Dry, Far Inland, Slopes, Low: Mangrove Swamp
-Warm, Dry, Far Inland, Slopes, Mid: Mangrove Swamp
-Warm, Dry, Far Inland, Slopes, High: Mangrove Swamp
-Warm, Dry, Far Inland, Slopes, Peak: Mangrove Swamp
+Warm, Dry, Far Inland, Slopes, Valley: Savanna Plateau
+Warm, Dry, Far Inland, Slopes, Low: Savanna Plateau
+Warm, Dry, Far Inland, Slopes, Mid: Savanna Plateau
+Warm, Dry, Far Inland, Slopes, High: Savanna Plateau
+Warm, Dry, Far Inland, Slopes, Peak: Arid Highlands
 Warm, Dry, Far Inland, Flat, Valley: Arid Highlands
 Warm, Dry, Far Inland, Flat, Low: Arid Highlands
 Warm, Dry, Far Inland, Flat, Mid: Arid Highlands
@@ -2800,11 +2792,11 @@ Warm, Neutral, Far Inland, Hills, Low: Brushland
 Warm, Neutral, Far Inland, Hills, Mid: Brushland
 Warm, Neutral, Far Inland, Hills, High: Brushland
 Warm, Neutral, Far Inland, Hills, Peak: Brushland
-Warm, Neutral, Far Inland, Slopes, Valley: Mangrove Swamp
-Warm, Neutral, Far Inland, Slopes, Low: Mangrove Swamp
-Warm, Neutral, Far Inland, Slopes, Mid: Mangrove Swamp
-Warm, Neutral, Far Inland, Slopes, High: Mangrove Swamp
-Warm, Neutral, Far Inland, Slopes, Peak: Mangrove Swamp
+Warm, Neutral, Far Inland, Slopes, Valley: River
+Warm, Neutral, Far Inland, Slopes, Low: Brushland
+Warm, Neutral, Far Inland, Slopes, Mid: Brushland
+Warm, Neutral, Far Inland, Slopes, High: Arid Highlands
+Warm, Neutral, Far Inland, Slopes, Peak: Arid Highlands
 Warm, Neutral, Far Inland, Flat, Valley: Arid Highlands
 Warm, Neutral, Far Inland, Flat, Low: Brushland & Arid Highlands
 Warm, Neutral, Far Inland, Flat, Mid: Brushland & Arid Highlands
@@ -2956,11 +2948,11 @@ Warm, Wet, Far Inland, Hills, Low: Jungle & Rocky Jungle
 Warm, Wet, Far Inland, Hills, Mid: Jungle & Rocky Jungle
 Warm, Wet, Far Inland, Hills, High: Jungle & Rocky Jungle
 Warm, Wet, Far Inland, Hills, Peak: Jungle & Rocky Jungle
-Warm, Wet, Far Inland, Slopes, Valley: Mangrove Swamp
-Warm, Wet, Far Inland, Slopes, Low: Mangrove Swamp
-Warm, Wet, Far Inland, Slopes, Mid: Mangrove Swamp
-Warm, Wet, Far Inland, Slopes, High: Mangrove Swamp
-Warm, Wet, Far Inland, Slopes, Peak: Mangrove Swamp
+Warm, Wet, Far Inland, Slopes, Valley: River
+Warm, Wet, Far Inland, Slopes, Low: Rainforest & Sparse Jungle
+Warm, Wet, Far Inland, Slopes, Mid: Rainforest & Sparse Jungle
+Warm, Wet, Far Inland, Slopes, High: Jungle & Rocky Jungle
+Warm, Wet, Far Inland, Slopes, Peak: Jungle & Rocky Jungle
 Warm, Wet, Far Inland, Flat, Valley: Rocky Jungle
 Warm, Wet, Far Inland, Flat, Low: Rocky Jungle & Sparse Jungle
 Warm, Wet, Far Inland, Flat, Mid: Rocky Jungle & Sparse Jungle
@@ -2977,12 +2969,12 @@ Warm, Wet, Far Inland, Extremely Flat, Mid: Jungle Mountains
 Warm, Wet, Far Inland, Extremely Flat, High: Jungle Mountains
 Warm, Wet, Far Inland, Extremely Flat, Peak: Jungle Mountains
 Warm, Humid, Coastal, Extreme Mountains, Valley: River
-Warm, Humid, Coastal, Extreme Mountains, Low: Amethyst Canyon
+Warm, Humid, Coastal, Extreme Mountains, Low: Sparse Jungle
 Warm, Humid, Coastal, Extreme Mountains, Mid: Stony Shore & Granite Cliffs
 Warm, Humid, Coastal, Extreme Mountains, High: Rainforest & Granite Cliffs
 Warm, Humid, Coastal, Extreme Mountains, Peak: Rainforest & Granite Cliffs
 Warm, Humid, Coastal, Mountains, Valley: River
-Warm, Humid, Coastal, Mountains, Low: Amethyst Canyon
+Warm, Humid, Coastal, Mountains, Low: Sparse Jungle
 Warm, Humid, Coastal, Mountains, Mid: Stony Shore & Granite Cliffs
 Warm, Humid, Coastal, Mountains, High: Rainforest & Granite Cliffs
 Warm, Humid, Coastal, Mountains, Peak: Rainforest & Granite Cliffs
@@ -2999,33 +2991,33 @@ Warm, Humid, Coastal, Slopes, High: Rainforest & Tropical Jungle
 Warm, Humid, Coastal, Slopes, Peak: Rainforest & Tropical Jungle
 Warm, Humid, Coastal, Flat, Valley: River
 Warm, Humid, Coastal, Flat, Low: Beach
-Warm, Humid, Coastal, Flat, Mid: Beach & Amethyst Rainforest
-Warm, Humid, Coastal, Flat, High: Amethyst Rainforest
-Warm, Humid, Coastal, Flat, Peak: Amethyst Rainforest
+Warm, Humid, Coastal, Flat, Mid: Beach
+Warm, Humid, Coastal, Flat, High: Rainforest
+Warm, Humid, Coastal, Flat, Peak: Rainforest
 Warm, Humid, Coastal, Very Flat, Valley: River
 Warm, Humid, Coastal, Very Flat, Low: Beach & Windswept Forest
 Warm, Humid, Coastal, Very Flat, Mid: Beach & Windswept Forest
-Warm, Humid, Coastal, Very Flat, High: Amethyst Rainforest
-Warm, Humid, Coastal, Very Flat, Peak: Amethyst Rainforest
+Warm, Humid, Coastal, Very Flat, High: Rainforest
+Warm, Humid, Coastal, Very Flat, Peak: Rainforest
 Warm, Humid, Coastal, Extremely Flat, Valley: River
 Warm, Humid, Coastal, Extremely Flat, Low: Beach
-Warm, Humid, Coastal, Extremely Flat, Mid: Beach & Amethyst Rainforest
-Warm, Humid, Coastal, Extremely Flat, High Ascending: Amethyst Rainforest
+Warm, Humid, Coastal, Extremely Flat, Mid: Beach & Rainforest
+Warm, Humid, Coastal, Extremely Flat, High Ascending: Rainforest
 Warm, Humid, Coastal, Extremely Flat, High Descending: Mangrove Swamp
 Warm, Humid, Coastal, Extremely Flat, Peak: Mangrove Swamp
 Warm, Humid, Near Inland, Extreme Mountains, Valley: River
-Warm, Humid, Near Inland, Extreme Mountains, Low: Amethyst Canyon
-Warm, Humid, Near Inland, Extreme Mountains, Mid Ascending: Volcanic Crater & Amethyst Canyon
-Warm, Humid, Near Inland, Extreme Mountains, Mid Descending: Amethyst Rainforest
-Warm, Humid, Near Inland, Extreme Mountains, High Ascending: Volcanic Crater & Amethyst Rainforest
-Warm, Humid, Near Inland, Extreme Mountains, High Descending: Amethyst Rainforest
+Warm, Humid, Near Inland, Extreme Mountains, Low: Sparse Jungle
+Warm, Humid, Near Inland, Extreme Mountains, Mid Ascending: Volcanic Crater & Jungle Mountains
+Warm, Humid, Near Inland, Extreme Mountains, Mid Descending: Jungle Mountains
+Warm, Humid, Near Inland, Extreme Mountains, High Ascending: Volcanic Crater & Jungle Mountains
+Warm, Humid, Near Inland, Extreme Mountains, High Descending: Jungle Mountains
 Warm, Humid, Near Inland, Extreme Mountains, Peak: Volcanic Peaks & Stony Peaks
 Warm, Humid, Near Inland, Mountains, Valley: River
-Warm, Humid, Near Inland, Mountains, Low: Amethyst Rainforest & Amethyst Canyon
-Warm, Humid, Near Inland, Mountains, Mid Ascending: Volcanic Crater & Amethyst Rainforest
-Warm, Humid, Near Inland, Mountains, Mid Descending: Amethyst Rainforest
-Warm, Humid, Near Inland, Mountains, High Ascending: Volcanic Crater & Amethyst Rainforest
-Warm, Humid, Near Inland, Mountains, High Descending: Amethyst Rainforest
+Warm, Humid, Near Inland, Mountains, Low: Sparse Jungle
+Warm, Humid, Near Inland, Mountains, Mid Ascending: Volcanic Crater & Jungle Mountains
+Warm, Humid, Near Inland, Mountains, Mid Descending: Jungle Mountains
+Warm, Humid, Near Inland, Mountains, High Ascending: Volcanic Crater & Jungle Mountains
+Warm, Humid, Near Inland, Mountains, High Descending: Jungle Mountains
 Warm, Humid, Near Inland, Mountains, Peak: Volcanic Peaks & Stony Peaks
 Warm, Humid, Near Inland, Hills, Valley: River
 Warm, Humid, Near Inland, Hills, Low: Rainforest & Tropical Jungle
@@ -3038,44 +3030,44 @@ Warm, Humid, Near Inland, Slopes, Mid: Rainforest & Tropical Jungle
 Warm, Humid, Near Inland, Slopes, High: Rainforest & Tropical Jungle
 Warm, Humid, Near Inland, Slopes, Peak: Rainforest & Tropical Jungle
 Warm, Humid, Near Inland, Flat, Valley: River
-Warm, Humid, Near Inland, Flat, Low: Rainforest & Amethyst Rainforest
-Warm, Humid, Near Inland, Flat, Mid: Rainforest & Amethyst Rainforest
-Warm, Humid, Near Inland, Flat, High: Rainforest & Amethyst Rainforest
-Warm, Humid, Near Inland, Flat, Peak: Rainforest & Amethyst Rainforest
+Warm, Humid, Near Inland, Flat, Low: Sparse Jungle
+Warm, Humid, Near Inland, Flat, Mid: Rainforest
+Warm, Humid, Near Inland, Flat, High: Rainforest
+Warm, Humid, Near Inland, Flat, Peak: Rainforest
 Warm, Humid, Near Inland, Very Flat, Valley: River
-Warm, Humid, Near Inland, Very Flat, Low: Amethyst Rainforest
-Warm, Humid, Near Inland, Very Flat, Mid: Amethyst Rainforest
-Warm, Humid, Near Inland, Very Flat, High: Amethyst Rainforest
-Warm, Humid, Near Inland, Very Flat, Peak: Amethyst Rainforest
+Warm, Humid, Near Inland, Very Flat, Low: Sparse Jungle
+Warm, Humid, Near Inland, Very Flat, Mid: Rainforest
+Warm, Humid, Near Inland, Very Flat, High: Rainforest
+Warm, Humid, Near Inland, Very Flat, Peak: Rainforest
 Warm, Humid, Near Inland, Extremely Flat, Valley: Mangrove Swamp
 Warm, Humid, Near Inland, Extremely Flat, Low: Mangrove Swamp
 Warm, Humid, Near Inland, Extremely Flat, Mid: Mangrove Swamp
 Warm, Humid, Near Inland, Extremely Flat, High: Mangrove Swamp
 Warm, Humid, Near Inland, Extremely Flat, Peak: Mangrove Swamp
-Warm, Humid, Mid Inland, Extreme Mountains, Valley: Amethyst Canyon
-Warm, Humid, Mid Inland, Extreme Mountains, Low: Amethyst Canyon
-Warm, Humid, Mid Inland, Extreme Mountains, Mid Ascending: Volcanic Crater & Amethyst Rainforest
-Warm, Humid, Mid Inland, Extreme Mountains, Mid Descending: Amethyst Rainforest
-Warm, Humid, Mid Inland, Extreme Mountains, High Ascending: Volcanic Crater & Stony Peaks
-Warm, Humid, Mid Inland, Extreme Mountains, High Descending: Volcanic Peaks & Stony Peaks
+Warm, Humid, Mid Inland, Extreme Mountains, Valley: River
+Warm, Humid, Mid Inland, Extreme Mountains, Low: Sparse Jungle
+Warm, Humid, Mid Inland, Extreme Mountains, Mid Ascending: Volcanic Crater & Jungle
+Warm, Humid, Mid Inland, Extreme Mountains, Mid Descending: Jungle
+Warm, Humid, Mid Inland, Extreme Mountains, High Ascending: Volcanic Crater & Jungle Mountains
+Warm, Humid, Mid Inland, Extreme Mountains, High Descending: Volcanic Peaks & Jungle Mountains
 Warm, Humid, Mid Inland, Extreme Mountains, Peak: Volcanic Peaks & Stony Peaks
-Warm, Humid, Mid Inland, Mountains, Valley: Amethyst Canyon
-Warm, Humid, Mid Inland, Mountains, Low: Amethyst Rainforest
-Warm, Humid, Mid Inland, Mountains, Mid Ascending: Volcanic Crater & Amethyst Rainforest
-Warm, Humid, Mid Inland, Mountains, Mid Descending: Amethyst Rainforest
-Warm, Humid, Mid Inland, Mountains, High Ascending: Volcanic Crater & Amethyst Rainforest
-Warm, Humid, Mid Inland, Mountains, High Descending: Amethyst Rainforest
+Warm, Humid, Mid Inland, Mountains, Valley: Sparse Jungle
+Warm, Humid, Mid Inland, Mountains, Low: Rainforest
+Warm, Humid, Mid Inland, Mountains, Mid Ascending: Volcanic Crater & Rainforest
+Warm, Humid, Mid Inland, Mountains, Mid Descending: Rainforest
+Warm, Humid, Mid Inland, Mountains, High Ascending: Volcanic Crater & Jungle Mountains
+Warm, Humid, Mid Inland, Mountains, High Descending: Jungle Mountains
 Warm, Humid, Mid Inland, Mountains, Peak: Volcanic Peaks & Stony Peaks
 Warm, Humid, Mid Inland, Hills, Valley: River
-Warm, Humid, Mid Inland, Hills, Low: Rainforest & Amethyst Rainforest
-Warm, Humid, Mid Inland, Hills, Mid: Rainforest & Amethyst Rainforest
-Warm, Humid, Mid Inland, Hills, High: Rainforest & Amethyst Rainforest
-Warm, Humid, Mid Inland, Hills, Peak: Rainforest & Amethyst Rainforest
+Warm, Humid, Mid Inland, Hills, Low: Rainforest
+Warm, Humid, Mid Inland, Hills, Mid: Rainforest
+Warm, Humid, Mid Inland, Hills, High: Rainforest
+Warm, Humid, Mid Inland, Hills, Peak: Rocky Jungle
 Warm, Humid, Mid Inland, Slopes, Valley: River
-Warm, Humid, Mid Inland, Slopes, Low: Amethyst Rainforest
-Warm, Humid, Mid Inland, Slopes, Mid: Amethyst Rainforest
-Warm, Humid, Mid Inland, Slopes, High: Amethyst Rainforest
-Warm, Humid, Mid Inland, Slopes, Peak: Amethyst Rainforest
+Warm, Humid, Mid Inland, Slopes, Low: Rainforest
+Warm, Humid, Mid Inland, Slopes, Mid: Jungle
+Warm, Humid, Mid Inland, Slopes, High: Jungle
+Warm, Humid, Mid Inland, Slopes, Peak: Rocky Jungle
 Warm, Humid, Mid Inland, Flat, Valley: River
 Warm, Humid, Mid Inland, Flat, Low: Rocky Jungle
 Warm, Humid, Mid Inland, Flat, Mid: Rocky Jungle
@@ -3091,30 +3083,29 @@ Warm, Humid, Mid Inland, Extremely Flat, Low: Rainforest & Jungle Mountains
 Warm, Humid, Mid Inland, Extremely Flat, Mid: Rainforest & Jungle Mountains
 Warm, Humid, Mid Inland, Extremely Flat, High: Rainforest & Jungle Mountains
 Warm, Humid, Mid Inland, Extremely Flat, Peak: Rainforest & Jungle Mountains
-Warm, Humid, Far Inland, Extreme Mountains, Valley: Amethyst Canyon
-Warm, Humid, Far Inland, Extreme Mountains, Low: Amethyst Rainforest
-Warm, Humid, Far Inland, Extreme Mountains, Mid Ascending: Volcanic Crater & Amethyst Rainforest
-Warm, Humid, Far Inland, Extreme Mountains, Mid Descending: Amethyst Rainforest
+Warm, Humid, Far Inland, Extreme Mountains, Valley: River
+Warm, Humid, Far Inland, Extreme Mountains, Low: Sparse Jungle
+Warm, Humid, Far Inland, Extreme Mountains, Mid Ascending: Volcanic Crater & Jungle
+Warm, Humid, Far Inland, Extreme Mountains, Mid Descending: Jungle
 Warm, Humid, Far Inland, Extreme Mountains, High Ascending: Volcanic Crater & Stony Peaks
 Warm, Humid, Far Inland, Extreme Mountains, High Descending: Volcanic Peaks & Stony Spires
 Warm, Humid, Far Inland, Extreme Mountains, Peak: Volcanic Peaks & Stony Spires
-Warm, Humid, Far Inland, Mountains, Valley: Amethyst Rainforest
-Warm, Humid, Far Inland, Mountains, Low: Amethyst Rainforest
-Warm, Humid, Far Inland, Mountains, Mid Ascending: Volcanic Crater & Amethyst Rainforest
-Warm, Humid, Far Inland, Mountains, Mid Descending: Rainforest & Amethyst Rainforest
-Warm, Humid, Far Inland, Mountains, High Ascending: Volcanic Crater & Amethyst Rainforest
-Warm, Humid, Far Inland, Mountains, High Descending: Volcanic Peaks & Stony Peaks
+Warm, Humid, Far Inland, Mountains, Valley: Sparse Jungle
+Warm, Humid, Far Inland, Mountains, Low: Jungle
+Warm, Humid, Far Inland, Mountains, Mid Ascending: Volcanic Crater & Jungle
+Warm, Humid, Far Inland, Mountains, Mid Descending: Rainforest & Jungle
+Warm, Humid, Far Inland, Mountains, High: Volcanic Peaks & Stony Peaks
 Warm, Humid, Far Inland, Mountains, Peak: Volcanic Peaks & Stony Spires
 Warm, Humid, Far Inland, Hills, Valley: River
-Warm, Humid, Far Inland, Hills, Low: Rainforest & Amethyst Rainforest
-Warm, Humid, Far Inland, Hills, Mid: Rainforest & Amethyst Rainforest
-Warm, Humid, Far Inland, Hills, High: Rainforest & Amethyst Rainforest
-Warm, Humid, Far Inland, Hills, Peak: Rainforest & Amethyst Rainforest
-Warm, Humid, Far Inland, Slopes, Valley: Mangrove Swamp
-Warm, Humid, Far Inland, Slopes, Low: Mangrove Swamp
-Warm, Humid, Far Inland, Slopes, Mid: Mangrove Swamp
-Warm, Humid, Far Inland, Slopes, High: Mangrove Swamp
-Warm, Humid, Far Inland, Slopes, Peak: Mangrove Swamp
+Warm, Humid, Far Inland, Hills, Low: Rainforest
+Warm, Humid, Far Inland, Hills, Mid: Rainforest
+Warm, Humid, Far Inland, Hills, High: Rainforest
+Warm, Humid, Far Inland, Hills, Peak: Rainforest
+Warm, Humid, Far Inland, Slopes, Valley: Sparse Jungle
+Warm, Humid, Far Inland, Slopes, Low: Rainforest
+Warm, Humid, Far Inland, Slopes, Mid: Rainforest
+Warm, Humid, Far Inland, Slopes, High: Rocky Jungle
+Warm, Humid, Far Inland, Slopes, Peak: Sparse Jungle
 Warm, Humid, Far Inland, Flat, Valley: Rocky Jungle
 Warm, Humid, Far Inland, Flat, Low: Rainforest & Rocky Jungle
 Warm, Humid, Far Inland, Flat, Mid: Rainforest & Rocky Jungle

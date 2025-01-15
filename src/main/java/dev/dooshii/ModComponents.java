@@ -12,6 +12,7 @@ public class ModComponents {
             ComponentType.<TrackingCompassComponent>builder().codec(TrackingCompassComponent.CODEC).build()
     );
 
-    protected static void initialize() {}
+    protected static void onInitialize() {
+    }
 
 }

@@ -625,12 +625,20 @@ export function biomeDefsParser(file: string) {
         if (!biomeVariant) biomeVariant = biomeNormal;
         if (biomeVariantOffset === undefined) biomeVariantOffset = biomeOffset;
 
-        const biomeNormalId = Object.entries(BIOME).find(
+        const findBiomeNormalId = Object.entries(BIOME).find(
             ([k]) => k.toLowerCase() === biomeNormal
-        )[1];
-        const biomeVariantId = Object.entries(BIOME).find(
+        );
+        if (!findBiomeNormalId) {
+            throw new Error(`Cannot find biome: ${biomeNormal}\n\t${line}`)
+        }
+        const biomeNormalId = findBiomeNormalId[1];
+        const findBiomeVariantId = Object.entries(BIOME).find(
             ([k]) => k.toLowerCase() === biomeVariant
-        )[1];
+        );
+        if (!findBiomeVariantId) {
+            throw new Error(`Cannot find biome: ${biomeVariant}\n\t${line}`)
+        }
+        const biomeVariantId = findBiomeVariantId[1];
 
         if (depthName !== "surface") {
             const depth = (
@@ -883,7 +891,7 @@ if (process.argv[2]) {
     overworldBiomesFor(process.argv[2]).then(console.log);
 }
 // overworldBiomesFor("").then((biomes) =>
-//     writeFile("./biomes.biomedefs", biomes)
+//     writeFile("./og-biomes.biomedefs", biomes)
 // );
 
 function getBiomeAt(

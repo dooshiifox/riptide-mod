@@ -1,5 +1,14 @@
 // 1.21.4	-999999999-01-01T00:00:00	Riptide/Model Definitions
+cd6f0b994441f5c4afb3a30eb115ed6d22d54f59 assets/riptide/blockstates/autumn_leaves.json
+3108b945ef089e330b52ec37cc542c97d868f620 assets/riptide/blockstates/golden_leaves.json
+d714cbdddaefd4b9a81e01eb1f5b889fcfac7cbb assets/riptide/blockstates/maple_leaves.json
+78b6e7d5aa6f1bb6c9b0313aa4b358a3c336a5ce assets/riptide/items/autumn_leaves.json
+ad0abfe774e969162555103cad2c0848183fe058 assets/riptide/items/golden_leaves.json
+79ad3615faa456b82bb3936bde5620b728999989 assets/riptide/items/maple_leaves.json
 e44dea2a5c4f6660b403c0da98358314de986ab9 assets/riptide/items/tracking_compass.json
+c9fc7fe5622089ec46cdd314e79035fe0d68faab assets/riptide/models/block/autumn_leaves.json
+fc637cfbf474b93c7431637acd1e0161ce3e7419 assets/riptide/models/block/golden_leaves.json
+eedb08681ecba2aa394c9da06d10af2c2e34206f assets/riptide/models/block/maple_leaves.json
 cf425c41efc17509cfae853af9395753ecee2dd7 assets/riptide/models/item/tracking_compass_00.json
 e45ca89b5de4e4848ab9e6e3580d9ce52dbe578d assets/riptide/models/item/tracking_compass_01.json
 918727881dc143d1947d6889c639caf3dbe1867d assets/riptide/models/item/tracking_compass_02.json

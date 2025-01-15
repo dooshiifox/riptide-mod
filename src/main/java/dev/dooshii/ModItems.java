@@ -5,6 +5,7 @@ import dev.dooshii.item.TrackingCompassItem;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.fabricmc.fabric.api.registry.FabricBrewingRecipeRegistryBuilder;
 import net.minecraft.block.Block;
+import net.minecraft.block.Blocks;
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
@@ -47,6 +48,9 @@ public class ModItems {
 
     public static final Item TRACKING_COMPASS = register("tracking_compass", TrackingCompassItem::new, new Item.Settings());
     public static final Item LOGGING = register("logging", LoggingItem::new, new Item.Settings().maxCount(1).rarity(Rarity.EPIC));
+    public static final Item AUTUMN_LEAVES = register(ModBlocks.AUTUMN_LEAVES);
+    public static final Item MAPLE_LEAVES = register(ModBlocks.MAPLE_LEAVES);
+    public static final Item GOLDEN_LEAVES = register(ModBlocks.GOLDEN_LEAVES);
 
     public static void onInitialize() {
         FabricBrewingRecipeRegistryBuilder.BUILD.register(builder -> {
@@ -62,6 +66,9 @@ public class ModItems {
             );
         });
 
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.NATURAL).register((itemGroup) -> {
+            itemGroup.addAfter(Blocks.FLOWERING_AZALEA_LEAVES, ModItems.AUTUMN_LEAVES, ModItems.MAPLE_LEAVES, ModItems.GOLDEN_LEAVES);
+        });
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.TOOLS).register((itemGroup) -> {
             itemGroup.add(ModItems.TRACKING_COMPASS);
         });

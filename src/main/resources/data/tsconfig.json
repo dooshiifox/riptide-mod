@@ -2,7 +2,9 @@
     "compilerOptions": {
         "checkJs": true,
         "allowJs": true,
-        "target": "ESNext"
+        "target": "ESNext",
+        "moduleResolution": "nodenext",
+        "module": "NodeNext"
     },
     "include": ["analyser.ts", "overworldGen.ts", "util.ts"]
 }
